@@ -496,64 +496,6 @@ footer{
 .f-links a:hover{color:var(--gold)}
 .f-copy{font-size:9px;color:rgba(250,247,242,.2);letter-spacing:.06em}
 
-/* ── VIDEO SECTION ── */
-.vid-section{
-  padding:120px 64px;
-  background:var(--charcoal);
-  position:relative;overflow:hidden;
-}
-/* Subtle ambient glow */
-.vid-section::before{
-  content:'';position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(ellipse at 50% 0%,rgba(154,122,69,.07) 0%,transparent 65%);
-}
-/* Fine border inset */
-.vid-section::after{
-  content:'';position:absolute;inset:40px;
-  border:1px solid rgba(154,122,69,.07);pointer-events:none;
-}
-.vid-inner{
-  position:relative;z-index:1;
-  max-width:960px;margin:0 auto;
-}
-.vid-header{
-  text-align:center;margin-bottom:52px;
-}
-.vid-header .slabel{
-  justify-content:center;color:var(--gold-light);
-  margin-bottom:16px;
-}
-.vid-header .slabel::before{background:var(--gold-mid)}
-.vid-header .stitle{
-  color:var(--ivory);
-  font-size:clamp(30px,3.6vw,48px);
-}
-.vid-header .stitle em{color:var(--gold-light)}
-/* The 16:9 responsive wrapper — the key trick */
-.vid-frame-wrap{}
-.vid-frame{
-  position:relative;
-  padding-bottom:56.25%; /* 16:9 ratio */
-  height:0;overflow:hidden;
-  border:1px solid rgba(154,122,69,.15);
-}
-.vid-frame iframe{
-  position:absolute;
-  top:0;left:0;
-  width:100%;height:100%;
-}
-.vid-caption{
-  display:flex;align-items:center;gap:16px;
-  margin-top:20px;
-  font-size:11px;letter-spacing:.06em;
-  color:rgba(250,247,242,.3);
-  line-height:1.6;
-}
-.vid-caption-line{
-  flex-shrink:0;
-  width:28px;height:1px;
-  background:linear-gradient(to right,var(--gold-mid),transparent);
-}
 
 /* ── REVEAL ── */
 .r{opacity:0;transform:translateY(24px);transition:opacity .85s ease,transform .85s ease}
@@ -590,7 +532,7 @@ footer{
     <div class="eyebrow">Switzerland's Most Private Fitness Club</div>
 
     <h1 class="hero-h">
-      The Gym<br/>You'll Never<br/>Find on <em>Google.</em>
+      The Club<br/>You Won't<br/>Find on <em>Google.</em>
     </h1>
 
     <p class="hero-sub">
@@ -614,14 +556,6 @@ footer{
 
   <div class="hero-r">
     <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/P1001912%203.webp" alt="Tulua Health Club"/>
-    <div class="trust-card">
-      <div class="trust-card-top">
-        <div class="trust-dot"></div>
-        <div class="trust-label">Member since 2018</div>
-      </div>
-      <div class="trust-text">"The only place I've ever trained where nothing feels like a compromise."</div>
-      <div class="trust-cite">— Private Member, Zollikon</div>
-    </div>
   </div>
 
   <div class="scroll-cue">
@@ -680,7 +614,7 @@ footer{
 
   <div class="why-right rr">
     <div class="why-img-stack">
-      <img class="why-img-main" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=85" alt="Training at Tulua"/>
+      <img class="why-img-main" src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Gym_photos-23.webp" alt="Training at Tulua"/>
       <div class="why-stat why-stat-1">
         <div class="why-stat-num">15</div>
         <div class="why-stat-label">Years Established</div>
@@ -693,31 +627,6 @@ footer{
   </div>
 </section>
 
-<!-- VIDEO SECTION -->
-<section class="vid-section">
-  <div class="vid-inner r">
-    <div class="vid-header">
-      <p class="slabel">In Motion</p>
-      <h2 class="stitle">See Tulua<br/><em>from the inside.</em></h2>
-    </div>
-    <div class="vid-frame-wrap">
-      <div class="vid-frame">
-        <iframe
-          id="tulua-video"
-          src="https://www.youtube.com/embed/lGDhFWACjPY?rel=0&modestbranding=1&color=white&iv_load_policy=3"
-          title="Tulua Health Clubs"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-      <div class="vid-caption">
-        <span class="vid-caption-line"></span>
-        Private training. Complete discretion. Two locations on the shores of Lake Zurich.
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- SERVICES -->
 <section class="services">
@@ -802,14 +711,15 @@ footer{
     <p class="slabel" style="color:var(--gold-light)">Exclusive Access</p>
     <h2 class="stitle" style="color:var(--ivory);margin-bottom:24px">Membership<br/>by <em>invitation.</em></h2>
     <p class="member-copy">
-      Tulua doesn't have walk-in memberships, waiting lists, or free trials. If you're here, it's because someone whose opinion you respect told you to be. We ask that you tell us a little about yourself — we'll be in touch within 24 hours.
+      Tulua doesn't have walk-in memberships, waiting lists, or free trials. If you're here, it's because someone whose opinion you respect told you to be. We ask that you tell us a little about yourself. We'll be in touch within 24 hours.
     </p>
     <ul class="member-feats">
-      <li>Fully private — no shared training floor, ever</li>
+      <li>Thoughtfully scheduled. The floor is never crowded. It always feels like yours.</li>
       <li>Dedicated personal trainer and wellness team</li>
       <li>Scheduling that fits around your life, not the other way around</li>
       <li>Access to Zollikon and Thalwil locations</li>
-      <li>Absolute discretion — always</li>
+      <li>Absolute discretion. Always.</li>
+      <li>A membership community of likeminded individuals. Selected, not marketed to.</li>
     </ul>
     <div style="display:flex;align-items:center;gap:20px;padding-top:28px;border-top:1px solid rgba(154,122,69,.1)">
       <div style="text-align:center">
@@ -925,7 +835,7 @@ footer{
       Request an Invitation
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <p class="final-alt">Prefer to call? <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>Or email <a href="/cdn-cgi/l/email-protection#187b77766c797b6c586c6d746d79367b70"><span class="__cf_email__" data-cfemail="086b67667c696b7c487c7d647d69266b60">[email&#160;protected]</span></a></p>
+    <p class="final-alt">Prefer to call? <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>Or email <a href="mailto:contact@tulua.ch">contact@tulua.ch</a></p>
     <div class="final-trust">
       <div class="final-trust-item">No obligation</div>
       <div class="final-trust-item">24h response</div>
