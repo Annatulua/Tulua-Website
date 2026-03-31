@@ -522,7 +522,6 @@ footer{
     <li><a href="personal-training.html">Personal Training</a></li>
     <li><a href="longevity.html">Longevity</a></li>
     <li><a href="echo-by-tulua.html">Echo</a></li>
-    <li><a href="story.html">Our Story</a></li>
     <li><a href="#apply" class="nav-btn">Request Membership</a></li>
   </ul>
 </nav>
@@ -836,7 +835,7 @@ footer{
       Request an Invitation
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <p class="final-alt">Prefer to call? <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>Or email <a href="/cdn-cgi/l/email-protection#93f0fcfde7f2f0e7d3e7e6ffe6f2bdf0fb"><span class="__cf_email__" data-cfemail="82e1edecf6e3e1f6c2f6f7eef7e3ace1ea">[email&#160;protected]</span></a></p>
+    <p class="final-alt">Prefer to call? <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>Or email <a href="mailto:contact@tulua.ch">contact@tulua.ch</a></p>
     <div class="final-trust">
       <div class="final-trust-item">No obligation</div>
       <div class="final-trust-item">24h response</div>
@@ -854,13 +853,12 @@ footer{
     <li><a href="personal-training.html">Personal Training</a></li>
     <li><a href="longevity.html">Longevity</a></li>
     <li><a href="echo-by-tulua.html">Echo</a></li>
-    <li><a href="story.html">Our Story</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Form
 const hf=document.getElementById('home-form');
 if(hf){hf.addEventListener('submit',async e=>{
@@ -892,4 +890,16 @@ const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
 
 // Reveal on scroll — this makes all sections visible as you scroll down
-const io=new Interse
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('v');
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
+</script>
+
+
+</body>
+</html>

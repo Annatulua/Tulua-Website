@@ -560,7 +560,6 @@ footer{
     <li><a href="personal-training.html">Personal Training</a></li>
     <li><a href="longevity.html">Longevity</a></li>
     <li><a href="echo-by-tulua.html">Echo</a></li>
-    <li><a href="story.html">Our Story</a></li>
     <li><a href="#apply" class="nav-btn">Request Membership</a></li>
   </ul>
 </nav>
@@ -633,7 +632,7 @@ footer{
         <div class="club-detail-label">Contact</div>
         <div class="club-detail-value">
           <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>
-          <a href="/cdn-cgi/l/email-protection#53303c3d273230271327263f26327d303b"><span class="__cf_email__" data-cfemail="a9cac6c7ddc8cadde9dddcc5dcc887cac1">[email&#160;protected]</span></a><br/>
+          <a href="mailto:contact@tulua.ch">contact@tulua.ch</a><br/>
           <span style="font-size:11px;color:var(--text-dim)">Tel & WhatsApp · 08:30–18:00</span>
         </div>
       </div>
@@ -690,7 +689,7 @@ footer{
         <div class="club-detail-label">Contact</div>
         <div class="club-detail-value">
           <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>
-          <a href="/cdn-cgi/l/email-protection#83e0ecedf7e2e0f7c3f7f6eff6e2ade0eb"><span class="__cf_email__" data-cfemail="1e7d71706a7f7d6a5e6a6b726b7f307d76">[email&#160;protected]</span></a><br/>
+          <a href="mailto:contact@tulua.ch">contact@tulua.ch</a><br/>
           <span style="font-size:11px;color:var(--text-dim)">Tel & WhatsApp · 08:30–18:00</span>
         </div>
       </div>
@@ -884,13 +883,12 @@ footer{
     <li><a href="personal-training.html">Personal Training</a></li>
     <li><a href="longevity.html">Longevity</a></li>
     <li><a href="echo-by-tulua.html">Echo</a></li>
-    <li><a href="story.html">Our Story</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
 // Cursor
 const c=document.getElementById('c'),cr=document.getElementById('cr');
@@ -907,4 +905,15 @@ document.querySelectorAll('a,button,input,select').forEach(el=>{
   el.addEventListener('mouseleave',()=>{cr.style.width='30px';cr.style.height='30px';cr.style.borderColor='rgba(154,122,69,.4)'});
 });
 
-// Nav scrol
+// Nav scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
+
+// Reveal on scroll
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')});
+},{threshold:0.1});
+document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
