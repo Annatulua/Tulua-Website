@@ -596,7 +596,7 @@ footer{
   <div class="intro-divider"></div>
   <div class="intro-item">
     <div class="intro-num">15</div>
-    <div class="intro-label">Years Established</div>
+    <div class="intro-label">Years of Private Excellence</div>
   </div>
   <div class="intro-divider"></div>
   <div class="intro-item">
@@ -616,7 +616,7 @@ footer{
     <h2 class="club-name">Zollikon</h2>
     <div class="club-region">Switzerland</div>
     <div class="club-desc">
-      <p>Our Zollikon location sits in one of Zurich's most sought-after residential areas — quiet, refined, and entirely private. Established in 2020, it brings the same founding philosophy to the northern shore of Lake Zurich. A space designed around how you feel — and how you'll feel in ten years.</p>
+      <p>Our Zollikon location sits in one of Zurich's most sought-after residential areas — quiet, refined, and entirely private. Established in 2020, it brings the same founding philosophy to the northern shore of Lake Zurich. A space where the only thing that matters is your progress.</p>
       <p>Fully equipped for personal training, body composition analysis, cryotherapy, and physiotherapy — all within a seamlessly private environment.</p>
     </div>
 
@@ -633,7 +633,7 @@ footer{
         <div class="club-detail-label">Contact</div>
         <div class="club-detail-value">
           <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>
-          <a href="/cdn-cgi/l/email-protection#b6d5d9d8c2d7d5c2f6c2c3dac3d798d5de"><span class="__cf_email__" data-cfemail="02616d6c766361764276776e77632c616a">[email&#160;protected]</span></a><br/>
+          <a href="mailto:contact@tulua.ch">contact@tulua.ch</a><br/>
           <span style="font-size:11px;color:var(--text-dim)">Tel & WhatsApp · 08:30–18:00</span>
         </div>
       </div>
@@ -673,8 +673,8 @@ footer{
     <h2 class="club-name">Thalwil</h2>
     <div class="club-region">Switzerland</div>
     <div class="club-desc">
-      <p>Thalwil extends Tulua's private world to the southern shore of Lake Zurich — a location chosen for its discretion, accessibility, and the community it serves.</p>
-      <p>The same rigorous standard as Zollikon. The same hand-picked team of trainers and therapists. For members who value the flexibility of two locations within twenty minutes of each other.</p>
+      <p>Thalwil extends Tulua's private world to the southern shore of Lake Zurich — a location chosen for its discretion, accessibility, and the calibre of the community it serves.</p>
+      <p>The same rigorous standard as Zollikon. The same hand-picked team of trainers and therapists. For members who value the flexibility of two world-class facilities within twenty minutes of each other.</p>
     </div>
 
     <div class="club-details">
@@ -690,7 +690,7 @@ footer{
         <div class="club-detail-label">Contact</div>
         <div class="club-detail-value">
           <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>
-          <a href="/cdn-cgi/l/email-protection#77141819031614033703021b021659141f"><span class="__cf_email__" data-cfemail="62010d0c160301162216170e17034c010a">[email&#160;protected]</span></a><br/>
+          <a href="mailto:contact@tulua.ch">contact@tulua.ch</a><br/>
           <span style="font-size:11px;color:var(--text-dim)">Tel & WhatsApp · 08:30–18:00</span>
         </div>
       </div>
@@ -890,7 +890,7 @@ footer{
   <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
 // Cursor
 const c=document.getElementById('c'),cr=document.getElementById('cr');
@@ -907,4 +907,15 @@ document.querySelectorAll('a,button,input,select').forEach(el=>{
   el.addEventListener('mouseleave',()=>{cr.style.width='30px';cr.style.height='30px';cr.style.borderColor='rgba(154,122,69,.4)'});
 });
 
-// Nav scrol
+// Nav scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
+
+// Reveal on scroll
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')});
+},{threshold:0.1});
+document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

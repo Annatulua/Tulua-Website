@@ -530,7 +530,7 @@ footer{
 <!-- HERO -->
 <section class="hero">
   <div class="hero-l">
-    <div class="eyebrow">Private Health Club · Zollikon &amp; Thalwil</div>
+    <div class="eyebrow">Switzerland's Most Private Fitness Club</div>
 
     <h1 class="hero-h">
       The Club<br/>You Won't<br/>Find on <em>Google.</em>
@@ -607,7 +607,7 @@ footer{
         <div class="diff-num">iv</div>
         <div class="diff-text">
           <div class="diff-title">Discretion is structural, not a promise</div>
-          <div class="diff-body">We don't talk about who trains here. That's not a policy — it's simply how we operate.</div>
+          <div class="diff-body">Our members include executives, athletes, and public figures. Our confidentiality is built into how the club operates — not written in a brochure.</div>
         </div>
       </div>
     </div>
@@ -621,8 +621,8 @@ footer{
         <div class="why-stat-label">Years Established</div>
       </div>
       <div class="why-stat why-stat-2">
-        <div class="why-stat-num" style="font-size:18px">✦</div>
-        <div class="why-stat-label">Word of Mouth. Always.</div>
+        <div class="why-stat-num">0</div>
+        <div class="why-stat-label">Ads. Ever. Until now.</div>
       </div>
     </div>
   </div>
@@ -836,7 +836,7 @@ footer{
       Request an Invitation
       <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <p class="final-alt">Prefer to call? <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>Or email <a href="/cdn-cgi/l/email-protection#2f4c40415b4e4c5b6f5b5a435a4e014c47"><span class="__cf_email__" data-cfemail="43202c2d372220370337362f36226d202b">[email&#160;protected]</span></a></p>
+    <p class="final-alt">Prefer to call? <a href="tel:+41765003338">+41 (0)76 500 33 38</a><br/>Or email <a href="mailto:contact@tulua.ch">contact@tulua.ch</a></p>
     <div class="final-trust">
       <div class="final-trust-item">No obligation</div>
       <div class="final-trust-item">24h response</div>
@@ -860,7 +860,7 @@ footer{
   <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Form
 const hf=document.getElementById('home-form');
 if(hf){hf.addEventListener('submit',async e=>{
@@ -892,4 +892,16 @@ const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
 
 // Reveal on scroll — this makes all sections visible as you scroll down
-const io=new Interse
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('v');
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
+</script>
+
+
+</body>
+</html>
