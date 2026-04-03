@@ -48,13 +48,13 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   display:flex;align-items:center;
 }
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55) sepia(.1) saturate(.85);transform:scale(1.04);animation:zout 16s ease forwards}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(34,32,24,.75) 0%,rgba(34,32,24,.2) 50%,transparent 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,14,14,.75) 0%,rgba(14,14,14,.2) 50%,transparent 100%),linear-gradient(to right,rgba(14,14,14,.85) 0%,rgba(14,14,14,.4) 40%,transparent 70%)}
 .hero-content{position:relative;z-index:2;padding:120px 64px 80px;max-width:700px}
 .breadcrumb{display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(250,247,242,.4);margin-bottom:24px;opacity:0;animation:fu .7s ease .3s forwards}
 .breadcrumb a{color:rgba(250,247,242,.4);text-decoration:none;cursor:none}
 .eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-light);margin-bottom:20px;opacity:0;animation:fu .7s ease .4s forwards}
 .eyebrow::before{content:'';width:24px;height:1px;background:var(--gold-mid)}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(44px,5.5vw,80px);font-weight:400;line-height:.97;color:var(--ivory);margin-bottom:24px;opacity:0;animation:fu .9s ease .55s forwards}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(32px,3.8vw,58px);font-weight:400;line-height:1.05;color:var(--ivory);margin-bottom:24px;opacity:0;animation:fu .9s ease .55s forwards}
 .hero-title em{font-style:italic;color:var(--gold-light);font-weight:300}
 .hero-desc{font-size:13px;line-height:1.9;color:rgba(250,247,242,.6);max-width:480px;margin-bottom:40px;opacity:0;animation:fu .9s ease .7s forwards}
 .hero-actions{display:flex;align-items:center;gap:20px;opacity:0;animation:fu .8s ease .9s forwards}
@@ -107,22 +107,22 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .step-body{font-size:12px;line-height:1.85;color:var(--text-soft)}
 
 /* DISCIPLINES */
-.disciplines{padding:0;background:var(--charcoal);overflow:hidden}
+.disciplines{padding:0;background:#F5F0E8;overflow:hidden}
 .disc-inner{padding:80px 64px}
 .disc-label{display:flex;align-items:center;gap:12px;font-size:9px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-light);margin-bottom:20px}
 .disc-label::before{content:'';width:22px;height:1px;background:var(--gold-mid)}
-.disc-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,42px);font-weight:300;color:var(--ivory);margin-bottom:48px}
+.disc-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3vw,42px);font-weight:300;color:#1A1A1A;margin-bottom:48px}
 .disc-title em{font-style:italic;color:var(--gold-light)}
 .disc-tags{display:flex;flex-wrap:wrap;gap:8px}
 .disc-tag{
   font-size:10px;letter-spacing:.12em;text-transform:uppercase;
-  border:1px solid rgba(154,122,69,.2);
-  color:rgba(250,247,242,.45);
+  border:1px solid #B8A882;
+  color:#6B5E45;
   padding:9px 16px;
   transition:border-color .3s,color .3s,background .3s;
   cursor:default;
 }
-.disc-tag:hover{border-color:rgba(154,122,69,.6);color:var(--gold-light);background:rgba(154,122,69,.06)}
+.disc-tag:hover{background:#B8A882;color:#F5F0E8;border-color:#B8A882;}
 
 /* RESULTS */
 .results{padding:110px 64px;background:var(--parchment);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -131,8 +131,8 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .stat-num{font-family:'Playfair Display',serif;font-size:38px;font-weight:300;color:var(--gold);line-height:1}
 .stat-label{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);margin-top:6px}
 .results-r{display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(154,122,69,.12)}
-.result-item{padding:24px 0;border-bottom:1px solid rgba(154,122,69,.1);display:grid;grid-template-columns:28px 1fr;gap:16px}
-.result-num{font-family:'Playfair Display',serif;font-style:italic;font-size:12px;color:var(--gold);padding-top:2px}
+.result-item{padding:24px 0;border-bottom:1px solid rgba(154,122,69,.1);}
+.result-num{display:none;}
 .result-title{font-size:13px;font-weight:400;color:var(--charcoal);margin-bottom:4px}
 .result-body{font-size:12px;line-height:1.8;color:var(--text-soft)}
 
@@ -202,7 +202,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
 
 <!-- HERO -->
 <section class="hero">
-  <img class="hero-img" src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Gym_photos-116.webp" style="width:100%;height:100%;object-fit:cover;">
+  <img class="hero-img" src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Misho%20Tim%20Boxinv.webp" style="width:100%;height:100%;object-fit:cover;">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="breadcrumb">
@@ -210,7 +210,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
       <span style="color:rgba(250,247,242,.2)">—</span>
       <span>Personal Training</span>
     </div>
-    <div class="eyebrow">One Trainer. One Client.</div>
+    <div class="eyebrow">Built Around You</div>
     <h1 class="hero-title">Training built<br/>around <em>your life.</em><br/>Not the other way.</h1>
     <p class="hero-desc">At Tulua, personal training means exactly that. Personal. Your goals, your schedule, your physiology. A dedicated team of specialists works around you. The floor is never crowded. No shortcuts.</p>
     <div class="hero-actions">
@@ -238,7 +238,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
     </div>
   </div>
   <div class="phil-img-wrap rr">
-    <img class="phil-img" src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Gym_photos-134.webp" style="width:100%;height:100%;object-fit:cover;">
+    <img class="phil-img" src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Flooring.webp" style="width:100%;height:100%;object-fit:cover;">
     <div class="phil-badge">
       <div class="phil-badge-num">1:1</div>
       <div class="phil-badge-label">Always Private</div>
