@@ -88,7 +88,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .stitle em{font-style:italic;color:var(--gold);font-weight:300}
 
 /* PHILOSOPHY */
-.philosophy{padding:110px 64px;background:var(--cream);display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
+.philosophy{padding:110px 64px;background:var(--cream);display:grid;grid-template-columns:1fr 0.5fr;gap:96px;align-items:center}
 .phil-copy{font-size:13px;line-height:2;color:var(--text-soft);margin-top:24px;max-width:440px}
 .phil-copy p+p{margin-top:16px}
 .phil-copy strong{color:var(--text);font-weight:400}
@@ -98,8 +98,8 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .pillar-title{font-size:12px;font-weight:400;color:var(--charcoal);margin-bottom:4px;letter-spacing:.04em}
 .pillar-body{font-size:11px;line-height:1.75;color:var(--text-soft)}
 .phil-img-wrap{position:relative}
-.phil-img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:brightness(.75) sepia(.08) saturate(.85);display:block;transition:transform .9s}
-.phil-img-wrap:hover .phil-img{transform:scale(1.02)}
+.philosophy{padding:110px 64px;background:var(--cream);display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
+.phil-img{width:20%;aspect-ratio:3/4;object-fit:cover;filter:brightness(.75) sepia(.08) saturate(.85);display:block;transition:transform .9s;margin:0 auto;}.phil-img-wrap:hover .phil-img{transform:scale(1.02)}
 .phil-img-wrap::before{content:'';position:absolute;inset:14px;border:1px solid rgba(154,122,69,.2);z-index:1;pointer-events:none}
 
 /* TREATMENT PANELS */
@@ -158,9 +158,9 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .partner-l{position:relative;z-index:1}
 .partner-l .slabel{color:var(--gold-light)}
 .partner-l .slabel::before{background:var(--gold-mid)}
-.partner-l .stitle{color:var(--ivory)}
+.partner-l .stitle{color:var(--ivory);font-size:clamp(32px,3.5vw,52px)}
 .partner-l .stitle em{color:var(--gold-light)}
-.partner-copy{font-size:13px;line-height:2;color:rgba(250,247,242,.5);margin-top:22px;max-width:440px}
+.partner-copy{font-size:15px;line-height:2;color:rgba(250,247,242,.6);margin-top:22px;max-width:440px}
 .partner-treatments{margin-top:36px;display:flex;flex-wrap:wrap;gap:8px}
 .partner-tag{font-size:9px;letter-spacing:.12em;text-transform:uppercase;border:1px solid rgba(154,122,69,.2);color:rgba(250,247,242,.4);padding:7px 14px}
 .partner-link{
@@ -240,7 +240,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
 
 /* ── ENHANCED PARTNER SECTION ── */
 .partner-enhanced{padding:0}
-.partner-top{padding:100px 64px;background:var(--charcoal);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;position:relative}
+.partner-top{padding:100px 64px;background:var(--charcoal);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;}
 .partner-top::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(154,122,69,.08) 0%,transparent 55%)}
 .partner-diagram{width:100%;object-fit:contain;display:block;filter:none}
 .partner-form-section{padding:80px 64px;background:var(--ivory)}
@@ -357,7 +357,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
     </div>
   </div>
   <div class="phil-img-wrap rr">
-    <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Gym_photos-134.webp" alt="Longevity Philosophy" c
+    <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Birgit%20Boxing.webp" alt="Longevity Philosophy" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:brightness(.85)">
   </div>
 </section>
 
@@ -396,20 +396,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
       </div>
     </div>
     <div style="position:relative;z-index:1">
-      <div style="margin-bottom:20px;position:relative">
-        <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Villa_Gaestelounge_Swiss_Center_Health_Longevity-1.webp" alt="Swiss Center Villa Zollikon" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:brightness(.95)">
-             alt="Swiss Center for Health and Longevity — Villa, Zollikon"
-             style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:brightness(.95)"/>
-        <div style="position:absolute;bottom:0;left:0;right:0;padding:16px 20px;background:linear-gradient(to top, rgba(26,30,36,.85) 0%, transparent 100%)">
-          <div style="font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light)">Swiss Center for Health &amp; Longevity</div>
-          <div style="font-size:12px;color:rgba(250,247,242,.75);margin-top:4px">Rotfluhstrasse 98 &middot; 8702 Zollikon</div>
-        </div>
-      </div>
-      <div style="position:relative">
-        <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Infusionstherapie_Bluttuning_Zuerich.webp" alt="Swiss Center Infusion Therapy" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:brightness(.95)">
-             alt="Swiss Center for Health and Longevity — Reception"
-             style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:brightness(.95)"/>
-      </div>
+      <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Villa_Gaestelounge_Swiss_Center_Health_Longevity-1.webp" alt="Swiss Center Villa Zollikon" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:brightness(.95)">
     </div>
   </div>
 
@@ -577,7 +564,7 @@ function handlePartnerForm(e) {
 
   <!-- IHHT -->
   <div class="treatment r">
-    <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Gym_photos-134.webp" alt="Treatment" class="treatment-img">
+    <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/Infusionstherapie_Bluttuning_Zuerich.webp" alt="Treatment" class="treatment-img">
     <div class="treatment-overlay"></div>
     <div class="treatment-content">
       <div class="treat-eyebrow">Advanced Therapy</div>
