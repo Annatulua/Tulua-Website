@@ -553,12 +553,26 @@ footer{
 <div class="cur" id="c"></div>
 <div class="cur-r" id="cr"></div>
 
+<nav id="mob-nav" class="mob-nav">
+  <a href="clubs.html">Clubs</a>
+  <a href="services.html">Services</a>
+  <a href="personal-training.html">Personal Training</a>
+  <a href="longevity.html">Longevity</a>
+  <a href="echo-by-tulua.html">Echo</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="#apply" class="nav-btn">Request Membership</a>
+</nav>
+
 <!-- NAV -->
 <nav id="nav">
   <a href="index.html" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none">
 <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/tulua_logo_ARTWORK.svg" alt="Tulua Logo" class="logo-img" style="height:40px;width:auto;">
     <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:400;letter-spacing:.24em;color:var(--charcoal);text-transform:uppercase">Tulu<span style="color:var(--gold)">a</span></span>
   </a>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-r">
     <li><a href="clubs.html">Clubs</a></li>
     <li><a href="services.html">Services</a></li>
@@ -878,6 +892,19 @@ if(hf){hf.addEventListener('submit',async e=>{
   hf.style.display='none';
   const s=document.getElementById('home-success');s.style.display='flex';
 });}
+
+// Mobile nav
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+}));
 
 // Cursor
 const c=document.getElementById('c'),cr=document.getElementById('cr');
