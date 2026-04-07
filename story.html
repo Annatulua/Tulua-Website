@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
 <script>
@@ -8,7 +9,6 @@
   gtag('js', new Date());
   gtag('config', 'G-VSCPVLNPTM');
 </script>
-</head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Our Story — Tulua Health Clubs | Thalwil & Zollikon</title>
@@ -193,11 +193,71 @@
     .r.vis{opacity:1;transform:translateY(0)}
     .d1{transition-delay:.15s}.d2{transition-delay:.3s}.d3{transition-delay:.45s}
 
-    /* MOBILE */
-    
+   /* MOBILE */
+    .ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+    .ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+    .ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+    .ham.open span:nth-child(2){opacity:0}
+    .ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+    .mob-nav{display:none;position:fixed;inset:0;z-index:450;background:rgba(250,247,242,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:center;justify-content:center;gap:36px;opacity:0;transition:opacity .3s}
+    .mob-nav.open{display:flex;opacity:1}
+    .mob-nav a{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none}
+    .mob-nav a.nav-btn{background:var(--gold);color:var(--white);padding:14px 36px;font-size:10px}
+    .mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;font-size:18px;color:var(--charcoal);cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px}
+    .mob-nav-close:hover{opacity:1}
+
+    @media(max-width:900px){
+      body{cursor:auto}
+      nav{padding:16px 24px}
+      nav.s{padding:12px 24px}
+      .nav-r{display:none}
+      .ham{display:flex}
+      .nav-hamburger{display:none !important}
+
+      /* Hero */
+      .story-hero{grid-template-columns:1fr;min-height:auto}
+      .story-hero-l{padding:110px 24px 60px}
+      .story-hero-r{height:60vw;min-height:260px}
+
+      /* Sections */
+      .intro{padding:64px 24px 0}
+      section[style*="padding:100px 64px"]{padding:64px 24px !important}
+      section[style*="padding:60px 64px"]{padding:48px 24px !important}
+      .founders{grid-template-columns:1fr;padding:64px 24px;gap:40px}
+      .trainers{padding:64px 24px}
+      .trainers-header{grid-template-columns:1fr;gap:32px;margin-bottom:40px}
+      .trainer-qualities{grid-template-columns:1fr;gap:2px}
+      .trainers-tribute{padding:32px 24px}
+      .community{grid-template-columns:1fr;padding:64px 24px;gap:40px}
+      .community-stats{grid-template-columns:1fr 1fr}
+      .values{padding:64px 24px}
+      .values-grid{grid-template-columns:1fr 1fr;gap:2px}
+      .story-cta{grid-template-columns:1fr;padding:64px 24px;gap:36px}
+      .pull-quote{padding:60px 24px}
+      footer{padding:36px 24px;flex-direction:column;gap:24px;text-align:center}
+      .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+    }
+
+    @media(max-width:600px){
+      .hero-title{font-size:clamp(36px,9vw,52px)}
+      .values-grid{grid-template-columns:1fr}
+      .community-stats{grid-template-columns:1fr 1fr}
+    }
   </style>
 </head>
 <body>
+
+<nav id="mob-nav" class="mob-nav">
+  <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <a href="clubs.html">Clubs</a>
+  <a href="services.html">Services</a>
+  <a href="personal-training.html">Personal Training</a>
+  <a href="longevity.html">Longevity</a>
+  <a href="echo-by-tulua.html">Echo</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html#apply" class="nav-btn">Request Membership</a>
+</nav>
 
 <!-- NAV -->
 <nav id="nav">
@@ -215,9 +275,9 @@
     <li><a href="contact.html">Contact</a></li>
     <li><a href="contact.html#apply" class="nav-btn">Request Membership</a></li>
   </ul>
-  <div class="nav-hamburger" id="ham"><span></span><span></span><span></span></div>
-
-  <button class="nav-hamburger" id="ham-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -241,7 +301,7 @@
   <div class="intro r" style="max-width:860px;margin:0 auto;text-align:center;padding:0">
     <div class="intro-label">The Beginning</div>
     <h2 class="intro-title">A place he wished <em>existed.</em></h2>
-    <p class="intro-body">2
+    <p class="intro-body">
       In 2011, Moshtak Farouk — known to everyone who matters as Misho — opened the doors of Pleasure & Pain Health Club in Thalwil with a simple intention. He wanted to build the club he had always searched for. A place where he and his closest friends could train at the highest level, in complete privacy, with people and equipment that matched the standard they held in every other area of their lives.<br/><br/>
       <strong>"I didn't build a business. I built a home."</strong><br/><br/>
       That is still exactly what it is. In 2018, Anna Farouk joined. In 2021, the club became Tulua — a new name for something that had already proven itself over a decade. A second location followed in Zollikon. The founding philosophy never changed."
@@ -431,77 +491,22 @@ const obs = new IntersectionObserver((entries) => {
 }, {threshold:0.12});
 document.querySelectorAll('.r').forEach(el => obs.observe(el));
 
-// Hamburger
-const ham = document.getElementById('ham');
-if(ham) {
-  const menu = document.createElement('div');
-  menu.style.cssText = 'position:fixed;inset:0;background:var(--ivory);z-index:450;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;transform:translateX(100%);transition:transform .4s ease';
-  const close = document.createElement('button');
-  close.innerHTML = '&times;';
-  close.style.cssText = 'position:absolute;top:24px;right:24px;font-size:28px;background:none;border:none;cursor:pointer;color:var(--charcoal)';
-  menu.appendChild(close);
-  document.querySelectorAll('.nav-r a').forEach(a => {
-    const l = a.cloneNode(true);
-    l.style.cssText = 'font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--text);text-decoration:none;font-family:Jost,sans-serif';
-    menu.appendChild(l);
-    l.addEventListener('click', () => menu.style.transform = 'translateX(100%)');
-  });
-  document.body.appendChild(menu);
-  ham.addEventListener('click', () => menu.style.transform = 'translateX(0)');
-  close.addEventListener('click', () => menu.style.transform = 'translateX(100%)');
-}
-
-// ── MOBILE HAMBURGER MENU ──
-(function() {
-  var btn = document.getElementById('ham-btn');
-  if (!btn) return;
-
-  // Create full-screen overlay menu
-  var overlay = document.createElement('div');
-  overlay.id = 'mob-menu';
-  overlay.style.cssText = [
-    'position:fixed','inset:0','background:var(--ivory)',
-    'z-index:9000','display:flex','flex-direction:column',
-    'align-items:center','justify-content:center','gap:28px',
-    'transform:translateX(100%)','transition:transform .35s ease',
-    'padding:40px 24px'
-  ].join(';');
-
-  // Close button
-  var closeBtn = document.createElement('button');
-  closeBtn.innerHTML = '&times;';
-  closeBtn.style.cssText = 'position:absolute;top:20px;right:24px;font-size:32px;background:none;border:none;cursor:pointer;color:var(--charcoal);line-height:1;padding:4px 8px';
-  overlay.appendChild(closeBtn);
-
-  // Copy all nav links into the overlay
-  var navLinks = document.querySelectorAll('.nav-r li a');
-  navLinks.forEach(function(a) {
-    var link = document.createElement('a');
-    link.href = a.href;
-    link.textContent = a.textContent;
-    link.style.cssText = 'font-family:Jost,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--text);text-decoration:none;padding:8px 0';
-    if (a.classList.contains('nav-btn')) {
-      link.style.cssText += ';background:var(--gold);color:#fff;padding:14px 36px;margin-top:12px';
-    }
-    link.addEventListener('click', close);
-    overlay.appendChild(link);
-  });
-
-  document.body.appendChild(overlay);
-
-  function open() { overlay.style.transform = 'translateX(0)'; }
-  function close() { overlay.style.transform = 'translateX(100%)'; }
-
-  btn.addEventListener('click', open);
-  closeBtn.addEventListener('click', close);
-
-  // Show/hide button based on screen width
-  function checkWidth() {
-    btn.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
-  }
-  checkWidth();
-  window.addEventListener('resize', checkWidth);
-})();
+// Mobile nav
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';
+});
+document.getElementById('mob-nav-close').addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+}));
 
 </script>
 </body>
