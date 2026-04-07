@@ -327,6 +327,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
 
 <nav id="mob-nav" class="mob-nav">
   <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <a href="index.html">Home</a>
   <a href="clubs.html">Clubs</a>
   <a href="services.html">Services</a>
   <a href="personal-training.html">Personal Training</a>
@@ -460,92 +461,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
 
   
 
-<!-- Contact Form -->
-  <div class="partner-form-section">
-    <div class="partner-form-inner r">
-      <div class="partner-form-copy">
-        <p class="slabel" style="color:var(--gold)">Direct Enquiry</p>
-        <h2 class="partner-form-title">Enquire with the<br/><em>Swiss Center.</em></h2>
-        <p class="partner-form-desc">
-          Interested in a Tulua longevity package or a consultation at the Swiss Center for Health & Longevity? Send your enquiry directly. The Center's team will contact you personally within 24 hours.
-        </p>
-        <p class="partner-form-desc" style="margin-top:-8px">
-          Your request will arrive clearly marked as coming from Tulua Health Clubs — ensuring you receive the priority service reserved for our members.
-        </p>
-        <div style="margin-top:32px;padding:24px;background:var(--cream);border-left:2px solid var(--gold)">
-          <div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Swiss Center for Health & Longevity</div>
-          <div style="font-size:13px;color:var(--charcoal);line-height:2">
-            Rotfluhstrasse 98<br/>
-            8702 Zollikon<br/>
-            <a href="tel:+41434994800" style="color:var(--charcoal);text-decoration:none">+41 43 499 48 00</a><br/>
-            <a href="https://health-longevity-center.ch/" target="_blank" style="color:var(--gold);text-decoration:none;font-size:11px;letter-spacing:.04em">health-longevity-center.ch</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="partner-contact-form">
-        <div class="partner-form-label">Tulua Member Enquiry — Swiss Center for Health & Longevity</div>
-        <div id="pform-content">
-          <form name="partner-enquiry" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handlePartnerForm(event)">
-            <input type="hidden" name="form-name" value="partner-enquiry"/>
-            <input type="hidden" name="source" value="Tulua Health Clubs — Member Enquiry"/>
-            <p style="display:none"><input name="bot-field"/></p>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 20px">
-              <input class="pform-input" type="text" name="firstname" placeholder="First name" required/>
-              <input class="pform-input" type="text" name="lastname" placeholder="Last name" required/>
-            </div>
-            <input class="pform-input" type="email" name="email" placeholder="Email address" required/>
-            <input class="pform-input" type="tel" name="phone" placeholder="Phone number (optional)"/>
-            <select class="pform-input" name="interest" required style="cursor:pointer">
-              <option value="" disabled selected>I am interested in...</option>
-              <option>Tulua Reset Package</option>
-              <option>Tulua Elevate Package</option>
-              <option>Tulua Apex Package</option>
-              <option>IV Infusion Therapy</option>
-              <option>Hyperbaric Oxygen (HBOT)</option>
-              <option>Plasma Light Therapy</option>
-              <option>Bluttuning Diagnostics</option>
-              <option>Brain Tuning</option>
-              <option>General Longevity Consultation</option>
-              <option>Other</option>
-            </select>
-            <textarea class="pform-textarea" name="message" placeholder="Tell us briefly about your goals or any specific questions." rows="4"></textarea>
-            <div class="pform-notice">
-              This enquiry will be sent directly to the Swiss Center for Health & Longevity, clearly marked as a <strong>Tulua Health Clubs member request</strong>. You will be contacted personally within 24 hours.
-            </div>
-            <button type="submit" class="pform-submit">Send Enquiry to Swiss Center</button>
-          </form>
-        </div>
-        <div id="pform-success" class="pform-success">
-          <div class="pform-success-icon">◈</div>
-          <div class="pform-success-title">Enquiry Sent</div>
-          <div class="pform-success-text">Your request has been forwarded to the Swiss Center for Health & Longevity as a Tulua member enquiry. Expect a personal response within 24 hours.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
-
-<script>
-function handlePartnerForm(e) {
-  e.preventDefault();
-  const form = e.target;
-  const data = new FormData(form);
-  fetch('/', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-    body: new URLSearchParams(data).toString()
-  }).then(() => {
-    document.getElementById('pform-content').style.display = 'none';
-    document.getElementById('pform-success').style.display = 'block';
-  }).catch(() => {
-    document.getElementById('pform-content').style.display = 'none';
-    document.getElementById('pform-success').style.display = 'block';
-  });
-}
-</script>
-
 
 <!-- IHHT & CRYO TREATMENTS — full bleed panels -->
 <div class="treatments">
