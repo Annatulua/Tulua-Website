@@ -418,6 +418,82 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
   .cryo-title{font-size:clamp(28px,7vw,40px)}
 }
 
+/* ── HAMBURGER ── */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+.ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{
+  display:none;position:fixed;inset:0;z-index:450;
+  background:rgba(250,247,242,.98);backdrop-filter:blur(18px);
+  flex-direction:column;align-items:center;justify-content:center;gap:36px;
+  opacity:0;transition:opacity .3s;
+}
+.mob-nav.open{display:flex;opacity:1}
+.mob-nav a{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none}
+.mob-nav a.nav-btn{background:var(--gold);color:var(--white);padding:14px 36px;font-size:10px}
+.mob-nav-close{
+  position:absolute;top:24px;right:24px;
+  background:none;border:none;font-size:18px;color:var(--charcoal);
+  cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px;
+}
+.mob-nav-close:hover{opacity:1}
+.nav-hamburger{display:none}
+
+@media(max-width:900px){
+  body{cursor:auto}
+  .cur,.cur-r{display:none}
+  nav{padding:20px 24px}
+  nav.s{padding:14px 24px}
+  .nav-r{display:none}
+  .ham{display:flex}
+
+  /* Hero */
+  .hero{grid-template-columns:1fr;height:auto;min-height:auto}
+  .hero-l{padding:110px 24px 52px}
+  .hero-l::after{display:none}
+  .hero-r{height:56vw;min-height:240px}
+  .hero-r::before{background:linear-gradient(to bottom,var(--ivory) 0%,transparent 40%)}
+
+  /* Availability strip */
+  .avail-strip{grid-template-columns:1fr;padding:36px 24px;gap:32px}
+  .avail-divider{display:none}
+  .avail-club{padding:0 !important}
+
+  /* Services section */
+  .services-section{padding:64px 24px}
+  .services-intro{grid-template-columns:1fr;gap:20px;margin-bottom:40px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-card.large{grid-column:span 1;display:flex;flex-direction:column}
+  .svc-card.large .svc-img{aspect-ratio:3/2;height:auto}
+  .svc-card.large .svc-body{padding:32px 28px}
+
+  /* Cryo feature */
+  .cryo-feature{grid-template-columns:1fr;min-height:auto}
+  .cryo-l{height:52vw;min-height:220px}
+  .cryo-r{padding:48px 24px}
+  .cryo-stats{gap:24px}
+
+  /* Gym design */
+  .gym-design{grid-template-columns:1fr;padding:64px 24px;gap:40px}
+
+  /* CTA */
+  .cta{grid-template-columns:1fr;padding:64px 24px;gap:40px}
+  .cta::after{display:none}
+  .trust-row{flex-wrap:wrap;gap:12px;justify-content:center}
+
+  /* Footer */
+  footer{padding:36px 24px;flex-direction:column;gap:24px;text-align:center}
+  .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+}
+
+@media(max-width:600px){
+  .hero-title{font-size:clamp(32px,8vw,46px)}
+  .stitle{font-size:clamp(28px,7vw,40px)}
+  .cryo-title{font-size:clamp(28px,7vw,40px)}
+}
+
 
 
 </style>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
 <script>
@@ -8,7 +9,6 @@
   gtag('js', new Date());
   gtag('config', 'G-VSCPVLNPTM');
 </script>
-</head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>ECHO by Tulua — 100 Society | Guided Training & Recovery, Zurich</title>
@@ -353,6 +353,78 @@ footer{background:var(--echo-dark);padding:44px 64px;display:flex;align-items:ce
 .r.v,.rl.v,.rr.v{opacity:1;transform:none}
 .d1{transition-delay:.13s}.d2{transition-delay:.26s}.d3{transition-delay:.39s}
 
+/* ── HAMBURGER & MOBILE NAV ── */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+.ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:450;background:rgba(250,247,242,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:center;justify-content:center;gap:36px;opacity:0;transition:opacity .3s}
+.mob-nav.open{display:flex;opacity:1}
+.mob-nav a{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none}
+.mob-nav a.nav-btn{background:var(--charcoal);color:var(--white);padding:14px 36px;font-size:10px}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;font-size:18px;color:var(--charcoal);cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px}
+.mob-nav-close:hover{opacity:1}
+
+/* ── MEDIA QUERIES ── */
+@media(max-width:900px){
+  body{cursor:auto}
+  .cur,.cur-r{display:none}
+  nav{padding:20px 24px}
+  nav.s{padding:14px 24px}
+  .nav-r{display:none}
+  .ham{display:flex}
+
+  /* Hero */
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-l{padding:110px 24px 60px}
+  .hero-rule{display:none}
+  .hero-r{height:60vw;min-height:260px}
+  .hero-badge{top:20px;right:20px;width:72px;height:72px}
+  .badge-num{font-size:26px}
+  .hero-actions{flex-direction:column;align-items:flex-start;gap:16px}
+
+  /* Intro strip */
+  .intro-strip{grid-template-columns:1fr;padding:0 24px}
+  .intro-item{padding:24px 0}
+  .intro-div{width:100%;height:1px;margin:0}
+
+  /* What is Echo */
+  .what{grid-template-columns:1fr;padding:64px 24px;gap:40px}
+
+  /* Formats */
+  .formats{padding:64px 24px}
+  .formats-header{grid-template-columns:1fr;gap:24px;margin-bottom:40px}
+  .formats-grid{grid-template-columns:1fr}
+
+  /* Subscriptions */
+  .subs{padding:64px 24px}
+  .subs-header{grid-template-columns:1fr;gap:24px;margin-bottom:40px}
+  .subs-grid{grid-template-columns:1fr}
+
+  /* Terms */
+  .terms{padding:60px 24px}
+
+  /* How to join */
+  .what[style*="background:var(--cream)"]{padding:64px 24px}
+
+  /* CTA */
+  .cta{grid-template-columns:1fr;padding:64px 24px;gap:36px}
+  .trust-row{flex-wrap:wrap;gap:12px;justify-content:center}
+
+  /* Footer */
+  footer{padding:36px 24px;flex-direction:column;gap:24px;text-align:center}
+  .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+}
+
+@media(max-width:600px){
+  .echo-wordmark{font-size:clamp(60px,16vw,90px)}
+  .hero-tagline{font-size:clamp(16px,5vw,22px)}
+  .stitle{font-size:clamp(26px,7vw,38px)}
+  .intro-strip{grid-template-columns:1fr 1fr;gap:0}
+  .intro-div:nth-child(4){display:none}
+}
+
 
 
 </style>
@@ -360,6 +432,16 @@ footer{background:var(--echo-dark);padding:44px 64px;display:flex;align-items:ce
 <body>
 <div class="cur" id="c"></div>
 <div class="cur-r" id="cr"></div>
+
+<nav id="mob-nav" class="mob-nav">
+  <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <a href="index.html">Tulua Health Clubs</a>
+  <a href="#formats">Formats</a>
+  <a href="#subscriptions">Subscriptions</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="#apply" class="nav-btn">Apply for Echo</a>
+</nav>
 
 <!-- NAV -->
 <nav id="nav">
@@ -384,7 +466,9 @@ footer{background:var(--echo-dark);padding:44px 64px;display:flex;align-items:ce
     <li><a href="#apply" class="nav-btn">Apply for Echo</a></li>
   </ul>
 
-  <button class="nav-hamburger" id="ham-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -649,57 +733,22 @@ addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.08});
 document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
 
-// ── MOBILE HAMBURGER MENU ──
-(function() {
-  var btn = document.getElementById('ham-btn');
-  if (!btn) return;
-
-  // Create full-screen overlay menu
-  var overlay = document.createElement('div');
-  overlay.id = 'mob-menu';
-  overlay.style.cssText = [
-    'position:fixed','inset:0','background:#14120e',
-    'z-index:9000','display:flex','flex-direction:column',
-    'align-items:center','justify-content:center','gap:28px',
-    'transform:translateX(100%)','transition:transform .35s ease',
-    'padding:40px 24px'
-  ].join(';');
-
-  // Close button
-  var closeBtn = document.createElement('button');
-  closeBtn.innerHTML = '&times;';
-  closeBtn.style.cssText = 'position:absolute;top:20px;right:24px;font-size:32px;background:none;border:none;cursor:pointer;color:#faf7f2;line-height:1;padding:4px 8px';
-  overlay.appendChild(closeBtn);
-
-  // Copy all nav links into the overlay
-  var navLinks = document.querySelectorAll('.nav-r li a');
-  navLinks.forEach(function(a) {
-    var link = document.createElement('a');
-    link.href = a.href;
-    link.textContent = a.textContent;
-    link.style.cssText = 'font-family:Jost,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#faf7f2;text-decoration:none;padding:8px 0';
-    if (a.classList.contains('nav-btn')) {
-      link.style.cssText += ';background:var(--gold);color:#fff;padding:14px 36px;margin-top:12px';
-    }
-    link.addEventListener('click', close);
-    overlay.appendChild(link);
-  });
-
-  document.body.appendChild(overlay);
-
-  function open() { overlay.style.transform = 'translateX(0)'; }
-  function close() { overlay.style.transform = 'translateX(100%)'; }
-
-  btn.addEventListener('click', open);
-  closeBtn.addEventListener('click', close);
-
-  // Show/hide button based on screen width
-  function checkWidth() {
-    btn.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
-  }
-  checkWidth();
-  window.addEventListener('resize', checkWidth);
-})();
+// Mobile nav
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';
+});
+document.getElementById('mob-nav-close').addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+}));
 
 </script>
 </body>
