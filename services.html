@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
 <script>
@@ -8,7 +9,6 @@
   gtag('js', new Date());
   gtag('config', 'G-VSCPVLNPTM');
 </script>
-</head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Services. Tulua Health Clubs | Personal Training, Cryotherapy & More</title>
@@ -787,55 +787,7 @@ mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
 
 // ── OLD HAMBURGER REMOVED ──
 (function() {
-  var btn = document.getElementById('ham-btn');
-  if (!btn) return;
-
-  // Create full-screen overlay menu
-  var overlay = document.createElement('div');
-  overlay.id = 'mob-menu';
-  overlay.style.cssText = [
-    'position:fixed','inset:0','background:var(--ivory)',
-    'z-index:9000','display:flex','flex-direction:column',
-    'align-items:center','justify-content:center','gap:28px',
-    'transform:translateX(100%)','transition:transform .35s ease',
-    'padding:40px 24px'
-  ].join(';');
-
-  // Close button
-  var closeBtn = document.createElement('button');
-  closeBtn.innerHTML = '&times;';
-  closeBtn.style.cssText = 'position:absolute;top:20px;right:24px;font-size:32px;background:none;border:none;cursor:pointer;color:var(--charcoal);line-height:1;padding:4px 8px';
-  overlay.appendChild(closeBtn);
-
-  // Copy all nav links into the overlay
-  var navLinks = document.querySelectorAll('.nav-r li a');
-  navLinks.forEach(function(a) {
-    var link = document.createElement('a');
-    link.href = a.href;
-    link.textContent = a.textContent;
-    link.style.cssText = 'font-family:Jost,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--text);text-decoration:none;padding:8px 0';
-    if (a.classList.contains('nav-btn')) {
-      link.style.cssText += ';background:var(--gold);color:#fff;padding:14px 36px;margin-top:12px';
-    }
-    link.addEventListener('click', close);
-    overlay.appendChild(link);
-  });
-
-  document.body.appendChild(overlay);
-
-  function open() { overlay.style.transform = 'translateX(0)'; }
-  function close() { overlay.style.transform = 'translateX(100%)'; }
-
-  btn.addEventListener('click', open);
-  closeBtn.addEventListener('click', close);
-
-  // Show/hide button based on screen width
-  function checkWidth() {
-    btn.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
-  }
-  checkWidth();
-  window.addEventListener('resize', checkWidth);
-})();
+  
 
 </script>
 </body>
