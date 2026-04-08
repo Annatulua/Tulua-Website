@@ -503,18 +503,23 @@ footer{
 .mob-nav{
   display:none;position:fixed;inset:0;z-index:450;
   background:rgba(250,247,242,.98);backdrop-filter:blur(18px);
-  flex-direction:column;align-items:center;justify-content:center;gap:36px;
+  flex-direction:column;align-items:center;justify-content:center;gap:28px;
   opacity:0;transition:opacity .3s;
 }
 .mob-nav.open{display:flex;opacity:1}
+.mob-nav-logo{height:36px;width:auto;margin-bottom:4px}
+.mob-nav-rule{width:40px;height:1px;background:var(--gold);opacity:.5;margin-bottom:4px}
 .mob-nav a{
-  font-size:13px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--charcoal);text-decoration:none;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--charcoal);text-decoration:none;transition:color .3s;
 }
+.mob-nav a:hover{color:var(--gold)}
 .mob-nav a.nav-btn{
-  background:var(--gold);color:var(--white);
-  padding:14px 36px;font-size:10px;
+  background:var(--gold);color:var(--white) !important;
+  padding:14px 44px;font-size:10px;letter-spacing:.18em;
+  margin-top:8px;
 }
+.mob-nav a.nav-btn:hover{background:var(--charcoal)}
 .mob-nav-close{
   position:absolute;top:24px;right:24px;
   background:none;border:none;
@@ -570,6 +575,8 @@ footer{
 
 <nav id="mob-nav" class="mob-nav">
   <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/tulua_logo_ARTWORK.svg" alt="Tulua" class="mob-nav-logo"/>
+  <div class="mob-nav-rule"></div>
   <a href="index.html">Home</a>
   <a href="clubs.html">Clubs</a>
   <a href="services.html">Services</a>
