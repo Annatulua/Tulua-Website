@@ -956,7 +956,45 @@ const io=new IntersectionObserver(entries=>{
 },{threshold:0.1});
 document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
 </script>
-
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthClub",
+  "name": "Tulua Health Clubs",
+  "url": "https://tulua.ch",
+  "logo": "https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/tulua_logo_ARTWORK.svg",
+  "description": "Switzerland's private health club. Personal training, cryotherapy, physiotherapy, massage and longevity programs. By invitation only.",
+  "telephone": "+41765003338",
+  "email": "contact@tulua.ch",
+  "foundingDate": "2011",
+  "location": [
+    {
+      "@type": "Place",
+      "name": "Tulua Health Club Thalwil",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Albisstrasse 13",
+        "addressLocality": "Thalwil",
+        "postalCode": "8800",
+        "addressCountry": "CH"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Tulua Health Club Zollikon",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rotfluhstrasse 98",
+        "addressLocality": "Zollikon",
+        "postalCode": "8702",
+        "addressCountry": "CH"
+      }
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/tulua_healthclub"
+  ]
+}
+</script>
 </body>
 </html>
