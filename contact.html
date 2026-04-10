@@ -42,7 +42,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .logo{font-family:'Playfair Display',serif;font-size:17px;font-weight:400;letter-spacing:.24em;color:var(--charcoal);text-decoration:none;text-transform:uppercase}
 .logo span{color:var(--gold)}
 .nav-r{display:flex;align-items:center;gap:32px;list-style:none}
-.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;cursor:none;font-weight:400}
+.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;font-weight:400}
 .nav-r a:hover,.nav-r a.active{color:var(--gold)}
 .nav-btn{background:var(--gold);color:var(--white) !important;padding:10px 24px;font-size:9.5px !important;letter-spacing:.18em;transition:background .3s !important}
 .nav-btn:hover{background:var(--charcoal) !important}
@@ -62,7 +62,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   background:linear-gradient(to right,var(--gold-pale),transparent);
 }
 .breadcrumb{display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-dim);margin-bottom:22px;opacity:0;animation:fu .7s ease .3s forwards}
-.breadcrumb a{color:var(--text-dim);text-decoration:none;cursor:none;transition:color .3s}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .3s}
 .breadcrumb a:hover{color:var(--gold)}
 .eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;opacity:0;animation:fu .7s ease .4s forwards}
 .eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
@@ -84,7 +84,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   padding:22px 0;
   margin-right:40px;
   border-bottom:2px solid transparent;
-  cursor:none;
+  
   transition:color .3s,border-color .3s;
   user-select:none;
 }
@@ -128,7 +128,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .method-icon svg{color:var(--gold-mid)}
 .method-label{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-dim);margin-bottom:5px}
 .method-value{font-size:13px;color:var(--ivory);line-height:1.6}
-.method-value a{color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(154,122,69,.3);padding-bottom:1px;cursor:none;transition:border-color .3s}
+.method-value a{color:var(--gold-light);text-decoration:none;border-bottom:1px solid rgba(154,122,69,.3);padding-bottom:1px;transition:border-color .3s}
 .method-value a:hover{border-color:var(--gold-light)}
 .method-note{font-size:10.5px;color:rgba(250,247,242,.3);margin-top:3px}
 
@@ -177,7 +177,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   font-family:'Jost',sans-serif;font-size:12.5px;font-weight:300;
   color:var(--text);outline:none;
   transition:border-color .3s,background .3s;
-  appearance:none;cursor:none;
+  appearance:none;
 }
 .field input:focus,.field select:focus,.field textarea:focus{
   border-color:var(--gold);background:var(--ivory);
@@ -192,7 +192,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   position:relative;
   border:1px solid rgba(154,122,69,.2);
   padding:14px 16px;
-  cursor:none;
+  
   transition:border-color .3s,background .3s;
   display:flex;align-items:center;gap:10px;
 }
@@ -218,7 +218,7 @@ nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   width:100%;background:var(--charcoal);color:var(--white);
   border:none;font-family:'Jost',sans-serif;
   font-size:10px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;
-  padding:18px;margin-top:8px;cursor:none;transition:background .3s;
+  padding:18px;margin-top:8px;transition:background .3s;
   display:flex;align-items:center;justify-content:center;gap:12px;
 }
 .form-submit:hover{background:var(--gold)}
@@ -332,8 +332,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
 </style>
 </head>
 <body>
-<div class="cur" id="c"></div>
-<div class="cur-r" id="cr"></div>
+
 
 <nav id="mob-nav" class="mob-nav">
   <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
@@ -658,20 +657,7 @@ wireForm('form-membership','success-membership');
 wireForm('form-booking','success-booking');
 
 
-// Cursor
-const c=document.getElementById('c'),cr=document.getElementById('cr');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-(function a(){
-  c.style.cssText=`left:${mx}px;top:${my}px`;
-  rx+=(mx-rx)*.11;ry+=(my-ry)*.11;
-  cr.style.left=rx+'px';cr.style.top=ry+'px';
-  requestAnimationFrame(a);
-})();
-document.querySelectorAll('a,button,input,select').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cr.style.width='44px';cr.style.height='44px';cr.style.borderColor='rgba(255,255,255,1)'});
-  el.addEventListener('mouseleave',()=>{cr.style.width='32px';cr.style.height='32px';cr.style.borderColor='rgba(255,255,255,.8)'});
-});
+
 
 // Nav scroll
 const nav=document.getElementById('nav');
