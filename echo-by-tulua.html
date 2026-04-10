@@ -59,7 +59,7 @@ nav.s{padding:14px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
 .nav-sep{width:1px;height:18px;background:rgba(154,122,69,.3)}
 .nav-echo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:300;letter-spacing:.18em;color:var(--charcoal);text-transform:uppercase;font-style:italic}
 .nav-r{display:flex;align-items:center;gap:28px;list-style:none}
-.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;font-weight:400}
+.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;cursor:none;font-weight:400}
 .nav-r a:hover{color:var(--gold)}
 .nav-back{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;display:flex;align-items:center;gap:8px;transition:color .3s;cursor:none}
 .nav-back:hover{color:var(--gold)}
@@ -157,7 +157,7 @@ nav.s{padding:14px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18
   background:var(--gold);color:var(--white);
   text-decoration:none;font-size:10px;font-weight:400;
   letter-spacing:.2em;text-transform:uppercase;
-  padding:16px 36px;transition:background .3s,transform .2s;
+  padding:16px 36px;transition:background .3s,transform .2s;cursor:none;
 }
 .btn-echo:hover{background:var(--ivory);color:var(--charcoal);transform:translateY(-1px)}
 .btn-echo svg{transition:transform .3s}
@@ -438,7 +438,8 @@ footer{background:var(--echo-dark);padding:44px 64px;display:flex;align-items:ce
 </style>
 </head>
 <body>
-
+<div class="cur" id="c"></div>
+<div class="cur-r" id="cr"></div>
 
 <nav id="mob-nav" class="mob-nav">
   <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
@@ -728,7 +729,14 @@ footer{background:var(--echo-dark);padding:44px 64px;display:flex;align-items:ce
 </footer>
 
 <script>
-
+const c=document.getElementById('c'),cr=document.getElementById('cr');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function a(){c.style.cssText=`left:${mx}px;top:${my}px`;rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(a)})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cr.style.width='44px';cr.style.height='44px';cr.style.borderColor='rgba(255,255,255,1)'});
+  el.addEventListener('mouseleave',()=>{cr.style.width='32px';cr.style.height='32px';cr.style.borderColor='rgba(255,255,255,.8)'});
+});
 const nav=document.getElementById('nav');
 addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.08});
