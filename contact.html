@@ -8,6 +8,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-VSCPVLNPTM');
+  gtag('config', 'AW-993742689');
 </script>
 <meta charset="UTF-8"/>
 <link rel="canonical" href="https://tulua.ch/contact.html"/>
@@ -652,6 +653,7 @@ function wireForm(formId, successId){
     try{await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});}catch(err){}
     form.style.display='none';
     document.getElementById(successId).style.display='flex';
+    gtag('event', 'conversion', {'send_to': 'AW-993742689/mL3NCK_hxgQQ4Z7t2QM','value': 1.0,'currency': 'CHF'});
   });
 }
 wireForm('form-membership','success-membership');
