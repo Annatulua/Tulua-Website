@@ -643,7 +643,7 @@ if(params.get('tab')==='booking'){
 }
 
 // Form submissions
-function wireForm(formId, successId){
+function wireForm(formId, successId, redirectUrl){
   const form=document.getElementById(formId);
   if(!form)return;
   form.addEventListener('submit',async e=>{
@@ -651,12 +651,16 @@ function wireForm(formId, successId){
     const btn=form.querySelector('button[type=submit]');
     btn.textContent='Sending…';btn.style.background='var(--stone)';
     try{await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()});}catch(err){}
-    form.style.display='none';
-    document.getElementById(successId).style.display='flex';
+    if(redirectUrl){
+      window.location.href=redirectUrl;
+    } else {
+      form.style.display='none';
+      document.getElementById(successId).style.display='flex';
+    }
     gtag('event', 'conversion', {'send_to': 'AW-993742689/mL3NCK_hxgQQ4Z7t2QM','value': 1.0,'currency': 'CHF'});
   });
 }
-wireForm('form-membership','success-membership');
+wireForm('form-membership','success-membership','/thank-you.html');
 wireForm('form-booking','success-booking');
 
 
