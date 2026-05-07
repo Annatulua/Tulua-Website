@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VSCPVLNPTM');
+  gtag('config', 'AW-993742689');
+</script>
+<!-- Google Ads Conversion: fires on page load = confirmed conversion -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-993742689/mL3NCK_hxgQQ4Z7t2QM','value': 1.0,'currency': 'CHF'});
+</script>
+<meta charset="UTF-8"/>
+<link rel="canonical" href="https://tulua.ch/thank-you.html"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Thank You — Tulua Health Clubs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ivory:#faf7f2;--cream:#f4efe6;--parchment:#ede5d8;
+  --gold:#9a7a45;--gold-mid:#b8965a;--gold-light:#c9a96e;--gold-pale:#e8d8bf;
+  --charcoal:#222018;--stone:#5c5248;
+  --text:#3a3028;--text-soft:#6e6258;--text-dim:#a89e94;--white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--text);font-family:'Jost',sans-serif;font-weight:300;font-size:14px;letter-spacing:.02em;overflow-x:hidden;cursor:none;min-height:100vh;display:flex;flex-direction:column}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");opacity:.45;mix-blend-mode:multiply}
+.cur{position:fixed;width:8px;height:8px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 0 1.5px rgba(0,0,0,.6),0 1px 4px rgba(0,0,0,.4)}
+.cur-r{position:fixed;width:32px;height:32px;border:1.5px solid rgba(255,255,255,.8);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .22s,height .22s,border-color .22s;box-shadow:0 0 0 1px rgba(0,0,0,.3)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:400;padding:28px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18px);border-bottom:1px solid rgba(154,122,69,.1)}
+.logo{font-family:'Playfair Display',serif;font-size:17px;font-weight:400;letter-spacing:.24em;color:var(--charcoal);text-decoration:none;text-transform:uppercase;cursor:none}
+.logo span{color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;cursor:none;font-weight:400}
+.nav-r a:hover{color:var(--gold)}
+.nav-btn{background:var(--gold);color:var(--white) !important;padding:10px 24px;font-size:9.5px !important;letter-spacing:.18em;transition:background .3s !important}
+.nav-btn:hover{background:var(--charcoal) !important}
+
+/* MAIN */
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:120px 40px 80px}
+
+.ty-wrap{
+  max-width:580px;width:100%;
+  text-align:center;
+}
+
+/* Animated circle */
+.ty-icon-wrap{
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:48px;
+  opacity:0;animation:fu .9s ease .2s forwards;
+}
+.ty-circle{
+  position:relative;
+  width:80px;height:80px;
+}
+.ty-circle svg.ring{
+  position:absolute;inset:0;
+  transform:rotate(-90deg);
+  animation:ring-draw 1.2s ease .4s forwards;
+}
+.ty-circle svg.ring circle{
+  stroke-dasharray:220;
+  stroke-dashoffset:220;
+  animation:ring-draw 1.2s ease .5s forwards;
+}
+@keyframes ring-draw{
+  to{stroke-dashoffset:0}
+}
+.ty-check{
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;animation:fu .5s ease 1.4s forwards;
+}
+
+.ty-eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:20px;
+  opacity:0;animation:fu .7s ease .6s forwards;
+}
+.ty-eyebrow::before,.ty-eyebrow::after{content:'';width:24px;height:1px;background:var(--gold)}
+
+.ty-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(38px,6vw,64px);
+  font-weight:400;line-height:1.0;
+  color:var(--charcoal);
+  margin-bottom:28px;
+  opacity:0;animation:fu .9s ease .75s forwards;
+}
+.ty-title em{font-style:italic;color:var(--gold);font-weight:300}
+
+.ty-body{
+  font-size:13.5px;line-height:2;
+  color:var(--text-soft);
+  max-width:400px;
+  margin:0 auto 52px;
+  opacity:0;animation:fu .9s ease .9s forwards;
+}
+
+.ty-cta{
+  opacity:0;animation:fu .9s ease 1.05s forwards;
+}
+.ty-btn{
+  display:inline-flex;align-items:center;gap:12px;
+  background:var(--charcoal);color:var(--white);
+  text-decoration:none;cursor:none;
+  font-family:'Jost',sans-serif;
+  font-size:10px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;
+  padding:18px 36px;
+  transition:background .3s;
+}
+.ty-btn:hover{background:var(--gold)}
+.ty-btn svg{transition:transform .3s}
+.ty-btn:hover svg{transform:translateX(-4px)}
+
+/* Divider */
+.ty-divider{
+  width:1px;height:60px;
+  background:linear-gradient(to bottom,transparent,var(--gold-pale),transparent);
+  margin:0 auto 40px;
+  opacity:0;animation:fu .9s ease 1.15s forwards;
+}
+
+/* What happens next */
+.ty-next{
+  opacity:0;animation:fu .9s ease 1.2s forwards;
+  border-top:1px solid rgba(154,122,69,.12);
+  padding-top:44px;
+  margin-top:44px;
+}
+.ty-next-label{
+  font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--text-dim);
+  margin-bottom:28px;
+}
+.ty-steps{
+  display:grid;grid-template-columns:1fr 1fr 1fr;
+  gap:1px;background:rgba(154,122,69,.1);
+  text-align:left;
+}
+.ty-step{
+  background:var(--ivory);
+  padding:24px 20px;
+}
+.ty-step-num{
+  font-family:'Playfair Display',serif;
+  font-size:28px;font-weight:300;color:var(--gold-pale);
+  line-height:1;margin-bottom:12px;
+}
+.ty-step-title{
+  font-size:11px;font-weight:400;letter-spacing:.06em;color:var(--charcoal);
+  margin-bottom:6px;
+}
+.ty-step-text{
+  font-size:11px;line-height:1.75;color:var(--text-dim);
+}
+
+/* FOOTER */
+footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(154,122,69,.08)}
+.f-logo{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.22em;color:var(--ivory);text-transform:uppercase}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:24px;list-style:none}
+.f-links a{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(250,247,242,.3);text-decoration:none;transition:color .3s;cursor:none}
+.f-links a:hover{color:var(--gold)}
+.f-copy{font-size:9px;color:rgba(250,247,242,.2);letter-spacing:.06em}
+
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* Hamburger */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+.ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:450;background:rgba(250,247,242,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:center;justify-content:center;gap:36px;opacity:0;transition:opacity .3s}
+.mob-nav.open{display:flex;opacity:1}
+.mob-nav a{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;cursor:none}
+.mob-nav a.nav-btn{background:var(--gold);color:var(--white);padding:14px 36px;font-size:10px}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;font-size:18px;color:var(--charcoal);cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px}
+.mob-nav-close:hover{opacity:1}
+
+@media(max-width:900px){
+  body{cursor:auto}
+  .cur,.cur-r{display:none}
+  nav{padding:20px 24px}
+  nav.s{padding:14px 24px}
+  .nav-r{display:none}
+  .ham{display:flex}
+  main{padding:100px 24px 60px}
+  .ty-steps{grid-template-columns:1fr}
+  footer{padding:36px 24px;flex-direction:column;gap:24px;text-align:center}
+  .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="cur" id="c"></div>
+<div class="cur-r" id="cr"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="logo">Tulu<span>a</span></a>
+  <ul class="nav-r">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li><a href="contact.html" class="nav-btn">Contact</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mob-nav">
+  <button class="mob-nav-close" id="mob-nav-close">✕</button>
+  <a href="clubs.html">Clubs</a>
+  <a href="services.html">Services</a>
+  <a href="personal-training.html">Personal Training</a>
+  <a href="longevity.html">Longevity</a>
+  <a href="echo-by-tulua.html">Echo</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html" class="nav-btn">Contact</a>
+</div>
+
+<main>
+  <div class="ty-wrap">
+
+    <!-- Animated ring icon -->
+    <div class="ty-icon-wrap">
+      <div class="ty-circle">
+        <svg class="ring" width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <circle cx="40" cy="40" r="35" stroke="#9a7a45" stroke-width="1" fill="none"/>
+        </svg>
+        <div class="ty-check">
+          <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
+            <path d="M1 8L8 14L21 1" stroke="#9a7a45" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="ty-eyebrow">Message Received</div>
+
+    <h1 class="ty-title">We'll be in<br/><em>touch soon.</em></h1>
+
+    <p class="ty-body">
+      A member of the Tulua team will review your enquiry and respond personally — usually within a few hours, and always within 24.
+    </p>
+
+    <div class="ty-cta">
+      <a href="index.html" class="ty-btn">
+        <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M15 5H1M1 5L5 1M1 5L5 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to Home
+      </a>
+    </div>
+
+    <div class="ty-next">
+      <div class="ty-next-label">What happens next</div>
+      <div class="ty-steps">
+        <div class="ty-step">
+          <div class="ty-step-num">01</div>
+          <div class="ty-step-title">Personal review</div>
+          <div class="ty-step-text">Your enquiry is read by a person on our team — not filtered by software.</div>
+        </div>
+        <div class="ty-step">
+          <div class="ty-step-num">02</div>
+          <div class="ty-step-title">Direct response</div>
+          <div class="ty-step-text">We'll reach out by your preferred contact method within 24 hours.</div>
+        </div>
+        <div class="ty-step">
+          <div class="ty-step-num">03</div>
+          <div class="ty-step-title">Your first visit</div>
+          <div class="ty-step-text">We'll arrange a complimentary first visit so you can experience Tulua for yourself.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">Tulu<span>a</span> Health Clubs</div>
+  <ul class="f-links">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="inside.html" style="color:var(--gold)">Inside</a></li>
+  </ul>
+  <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland &nbsp;·&nbsp; <a href="impressum.html" style="color:rgba(250,247,242,.2);text-decoration:none;transition:color .3s">Impressum</a></p>
+</footer>
+
+<script>
+// Cursor
+const c=document.getElementById('c'),cr=document.getElementById('cr');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function a(){
+  c.style.cssText=`left:${mx}px;top:${my}px`;
+  rx+=(mx-rx)*.11;ry+=(my-ry)*.11;
+  cr.style.left=rx+'px';cr.style.top=ry+'px';
+  requestAnimationFrame(a);
+})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cr.style.width='44px';cr.style.height='44px';cr.style.borderColor='rgba(255,255,255,1)'});
+  el.addEventListener('mouseleave',()=>{cr.style.width='32px';cr.style.height='32px';cr.style.borderColor='rgba(255,255,255,.8)'});
+});
+
+// Nav scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
+
+// Mobile nav
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';
+});
+document.getElementById('mob-nav-close').addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+}));
+</script>
+</body>
+</html>
