@@ -55,11 +55,26 @@ main{flex:1;display:flex;align-items:center;justify-content:center;padding:120px
   text-align:center;
 }
 
+/* Logo */
+.ty-logo-wrap{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  margin-bottom:36px;
+  opacity:0;animation:fu .9s ease .15s forwards;
+}
+.ty-logo{
+  height:96px;width:auto;display:block;
+  margin-bottom:22px;
+}
+.ty-logo-rule{
+  width:80px;height:1px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+}
+
 /* Animated circle */
 .ty-icon-wrap{
   display:flex;align-items:center;justify-content:center;
   margin-bottom:48px;
-  opacity:0;animation:fu .9s ease .2s forwards;
+  opacity:0;animation:fu .9s ease .35s forwards;
 }
 .ty-circle{
   position:relative;
@@ -242,6 +257,12 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
 <main>
   <div class="ty-wrap">
 
+    <!-- Tulua Logo -->
+    <div class="ty-logo-wrap">
+      <img src="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/tulua_logo_ARTWORK.svg" alt="Tulua" class="ty-logo"/>
+      <div class="ty-logo-rule"></div>
+    </div>
+
     <!-- Animated ring icon -->
     <div class="ty-icon-wrap">
       <div class="ty-circle">
@@ -261,7 +282,7 @@ footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:cen
     <h1 class="ty-title">We'll be in<br/><em>touch soon.</em></h1>
 
     <p class="ty-body">
-      A member of the Tulua team will review your enquiry and respond personally — usually within a few hours.
+      A member of the Tulua team will review your enquiry and respond personally.
     </p>
 
     <div class="ty-cta">

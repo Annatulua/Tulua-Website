@@ -917,8 +917,8 @@ if(hf){hf.addEventListener('submit',async e=>{
   const btn=hf.querySelector('button[type=submit]');
   btn.textContent='Sending…';btn.style.background='var(--stone)';
   try{await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(hf)).toString()});}catch(err){}
-  hf.style.display='none';
-  const s=document.getElementById('home-success');s.style.display='flex';
+  gtag('event','conversion',{'send_to':'AW-993742689/mL3NCK_hxgQQ4Z7t2QM','value':1.0,'currency':'CHF'});
+  window.location.href='/thank-you.html';
 });}
 
 // Mobile nav
