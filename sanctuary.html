@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VSCPVLNPTM');
+  gtag('config', 'AW-993742689');
+</script>
+<meta charset="UTF-8"/>
+<link rel="canonical" href="https://tulua.ch/sanctuary.html"/>
+<meta property="og:title" content="Sanctuary — Tulua Health Clubs | A Sanctuary for the Nervous System"/>
+<meta property="og:description" content="Somatic bodywork, Thai massage, breathwork and recovery at Tulua — a private sanctuary for the nervous system. Thalwil & Zollikon, Zurich."/>
+<meta property="og:image" content="https://raw.githubusercontent.com/Annatulua/Tulua-Website/main/images/dominique-rivas-tVgjf-Jd-IU-unsplash.webp"/>
+<meta property="og:url" content="https://tulua.ch/sanctuary.html"/>
+<meta property="og:type" content="website"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sanctuary — Tulua Health Clubs | A Sanctuary for the Nervous System</title>
+<meta name="description" content="Somatic bodywork, Thai massage, breathwork and recovery at Tulua — a private sanctuary for the nervous system. Thalwil & Zollikon, Zurich."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ivory:#faf7f2;--cream:#f4efe6;--parchment:#ede5d8;
+  --gold:#9a7a45;--gold-mid:#b8965a;--gold-light:#c9a96e;--gold-pale:#e8d8bf;
+  --charcoal:#222018;--stone:#5c5248;
+  --text:#3a3028;--text-soft:#6e6258;--text-dim:#a89e94;--white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--text);font-family:'Jost',sans-serif;font-weight:300;font-size:14px;letter-spacing:.02em;overflow-x:hidden;cursor:none}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");opacity:.45;mix-blend-mode:multiply}
+.cur{position:fixed;width:7px;height:7px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
+.cur-r{position:fixed;width:30px;height:30px;border:1px solid rgba(154,122,69,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .22s,height .22s,border-color .22s}
+
+/* NAV — light */
+nav{position:fixed;top:0;left:0;right:0;z-index:400;padding:28px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav:not(.s){background:linear-gradient(to bottom,rgba(250,247,242,.85) 0%,transparent 100%)}
+nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18px);border-bottom:1px solid rgba(154,122,69,.1)}
+.logo{font-family:'Playfair Display',serif;font-size:17px;font-weight:400;letter-spacing:.24em;color:var(--charcoal);text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;cursor:none;font-weight:400}
+.nav-r a:hover,.nav-r a.active{color:var(--gold)}
+.nav-btn{background:var(--gold);color:var(--white) !important;padding:10px 24px;font-size:9.5px !important;letter-spacing:.18em;transition:background .3s !important}
+.nav-btn:hover{background:var(--charcoal) !important}
+
+/* HERO — LIGHT split: text left ivory, image right */
+.hero{min-height:90vh;display:grid;grid-template-columns:55% 45%;position:relative;overflow:hidden}
+.hero-l{background:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:140px 64px 80px;position:relative}
+.hero-l::after{content:'';position:absolute;right:0;top:15%;bottom:15%;width:1px;background:linear-gradient(to bottom,transparent,rgba(154,122,69,.2),transparent)}
+.breadcrumb{display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-dim);margin-bottom:24px;opacity:0;animation:fu .7s ease .3s forwards}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;cursor:none;transition:color .3s}
+.breadcrumb a:hover{color:var(--gold)}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;opacity:0;animation:fu .7s ease .4s forwards}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(44px,5.2vw,76px);font-weight:400;line-height:.97;color:var(--charcoal);margin-bottom:28px;opacity:0;animation:fu .9s ease .55s forwards}
+.hero-title em{font-style:italic;color:var(--gold);font-weight:300}
+.hero-sub{font-family:'Playfair Display',serif;font-size:18px;line-height:1.55;color:var(--text-soft);max-width:440px;margin-bottom:24px;opacity:0;animation:fu .9s ease .7s forwards}
+.hero-desc{font-size:13px;line-height:1.9;color:var(--text-soft);max-width:440px;margin-bottom:40px;opacity:0;animation:fu .9s ease .85s forwards}
+.hero-actions{display:flex;align-items:center;gap:24px;opacity:0;animation:fu .8s ease 1s forwards}
+.btn-main{display:inline-flex;align-items:center;gap:12px;background:var(--charcoal);color:var(--white);text-decoration:none;font-size:10px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;padding:18px 38px;transition:background .3s,transform .2s;cursor:none}
+.btn-main:hover{background:var(--gold);transform:translateY(-1px)}
+.btn-main svg{transition:transform .3s}
+.btn-main:hover svg{transform:translateX(3px)}
+.btn-ghost{color:var(--text-soft);text-decoration:none;font-size:10px;letter-spacing:.18em;text-transform:uppercase;border-bottom:1px solid rgba(154,122,69,.25);padding-bottom:3px;transition:color .3s,border-color .3s;cursor:none}
+.btn-ghost:hover{color:var(--gold);border-color:var(--gold)}
+.hero-r{position:relative;overflow:hidden}
+.hero-r img{width:100%;height:100%;object-fit:cover;filter:brightness(.95) saturate(.95);transform:scale(1.04);animation:zout 18s ease forwards}
+.hero-r::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--ivory) 0%,rgba(250,247,242,.15) 18%,transparent 45%);z-index:1}
+
+@keyframes zout{to{transform:scale(1)}}
+@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* SHARED */
+.slabel{display:flex;align-items:center;gap:12px;font-size:9px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.slabel::before{content:'';width:22px;height:1px;background:var(--gold)}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(30px,3.5vw,50px);font-weight:400;color:var(--charcoal);line-height:1.08}
+.stitle em{font-style:italic;color:var(--gold);font-weight:300}
+
+/* INVITATION — emotional opener after Hero */
+.invitation{padding:130px 64px;background:var(--ivory);display:grid;grid-template-columns:1.05fr 1fr;gap:96px;align-items:center;position:relative}
+.invitation::before{content:'';position:absolute;left:50%;top:8%;bottom:8%;width:1px;background:linear-gradient(to bottom,transparent,rgba(154,122,69,.18),transparent);transform:translateX(-50%);display:none}
+.invitation-l{padding-right:24px}
+.invitation-eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
+.invitation-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.invitation-q{font-family:'Playfair Display',serif;font-size:clamp(38px,5vw,68px);font-weight:400;line-height:1.05;color:var(--charcoal);margin-bottom:36px}
+.invitation-q em{color:var(--gold);font-style:italic}
+.invitation-copy{font-size:14.5px;line-height:1.95;color:var(--text-soft);max-width:460px}
+.invitation-copy p+p{margin-top:16px}
+.invitation-copy strong{color:var(--text);font-weight:400}
+.invitation-statement{font-family:'Playfair Display',serif;font-size:clamp(26px,2.6vw,36px);font-weight:400;line-height:1.3;color:var(--charcoal);margin-top:38px;padding-top:32px;border-top:1px solid rgba(154,122,69,.2);max-width:480px}
+.invitation-statement em{font-style:italic;font-weight:300}
+.invitation-statement .gold{color:var(--gold)}
+.invitation-r{position:relative}
+.invitation-img-wrap{position:relative}
+.invitation-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;filter:brightness(1) saturate(.95)}
+.invitation-img-wrap::before{content:'';position:absolute;inset:14px;border:1px solid rgba(154,122,69,.22);z-index:1;pointer-events:none}
+
+/* PHILOSOPHY */
+.philosophy{padding:110px 64px;background:var(--cream);display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
+.phil-copy{font-size:13px;line-height:2;color:var(--text-soft);margin-top:24px;max-width:460px}
+.phil-copy p+p{margin-top:16px}
+.phil-copy strong{color:var(--text);font-weight:400}
+.sanctuary-pillars{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(154,122,69,.12)}
+.pillar{background:var(--cream);padding:24px 22px}
+.pillar.is-emph{background:rgba(154,122,69,.08)}
+.pillar-icon{font-size:18px;margin-bottom:10px;color:var(--gold)}
+.pillar-title{font-size:12px;font-weight:400;color:var(--charcoal);margin-bottom:4px;letter-spacing:.04em}
+.pillar.is-emph .pillar-title{color:var(--gold)}
+.pillar-body{font-size:11px;line-height:1.75;color:var(--text-soft)}
+.phil-img-wrap{position:relative}
+.phil-img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:brightness(.85) saturate(.95);display:block;transition:transform .9s}
+.phil-img-wrap:hover .phil-img{transform:scale(1.02)}
+.phil-img-wrap::before{content:'';position:absolute;inset:14px;border:1px solid rgba(154,122,69,.2);z-index:1;pointer-events:none}
+
+/* THE PRACTICE — text left, numbered elements right */
+.practice{padding:110px 64px;background:var(--ivory);display:grid;grid-template-columns:1fr 1.1fr;gap:96px;align-items:start}
+.practice-l{position:sticky;top:120px}
+.practice-copy{font-size:13.5px;line-height:2;color:var(--text-soft);margin-top:22px;max-width:440px}
+.practice-copy p+p{margin-top:14px}
+.practice-copy strong{color:var(--text);font-weight:400}
+.practice-quote{font-family:'Playfair Display',serif;font-size:19px;font-weight:400;line-height:1.6;color:var(--charcoal);margin-top:36px;padding-top:28px;border-top:1px solid rgba(154,122,69,.15);max-width:420px}
+.practice-quote em{font-style:italic;color:var(--gold);font-weight:300}
+.practice-quote::first-letter{color:var(--gold)}
+.practice-elements{display:flex;flex-direction:column;border-top:1px solid rgba(154,122,69,.12)}
+.practice-el{padding:24px 0;border-bottom:1px solid rgba(154,122,69,.12)}
+.practice-el-n{display:none}
+.practice-el-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:400;color:var(--charcoal);margin-bottom:6px;letter-spacing:.01em}
+.practice-el-desc{font-size:12px;line-height:1.85;color:var(--text-soft);max-width:520px}
+
+/* RITUAL BAND — full-width atmospheric image after Practice */
+.ritual-band{position:relative;height:62vh;min-height:440px;overflow:hidden}
+.ritual-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(.95)}
+.ritual-band::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(34,32,24,.25) 0%,rgba(34,32,24,.55) 100%);z-index:1}
+.ritual-band-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 40px;z-index:2}
+.ritual-band-eyebrow{font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-light);margin-bottom:28px;display:flex;align-items:center;gap:14px}
+.ritual-band-eyebrow::before,.ritual-band-eyebrow::after{content:'';width:24px;height:1px;background:var(--gold-mid)}
+.ritual-band-quote{font-family:'Playfair Display',serif;font-size:clamp(24px,2.6vw,38px);font-weight:400;line-height:1.35;color:var(--ivory);max-width:780px}
+.ritual-band-quote em{color:var(--gold-light)}
+
+/* THE JOURNEYS — 3 cards, accessible doors in */
+.journeys{padding:120px 64px;background:var(--parchment)}
+.journeys-header{max-width:620px;margin-bottom:60px}
+.journeys-header p{font-size:13.5px;line-height:1.95;color:var(--text-soft);margin-top:18px}
+.journeys-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(154,122,69,.12)}
+.journey{background:var(--ivory);padding:44px 36px;display:flex;flex-direction:column;position:relative;transition:background .3s}
+.journey::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .38s ease}
+.journey:hover{background:var(--cream)}
+.journey:hover::after{transform:scaleX(1)}
+.journey-num{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:var(--gold);margin-bottom:24px}
+.journey-name{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:var(--charcoal);line-height:1.15;margin-bottom:16px}
+.journey-name em{font-style:italic;color:var(--gold);font-weight:300}
+.journey-desc{font-size:12.5px;line-height:1.9;color:var(--text-soft);flex:1}
+.journey-meta{margin-top:24px;padding-top:18px;border-top:1px solid rgba(154,122,69,.15);display:flex;flex-direction:column;gap:6px}
+.journey-duration{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.journey-avail{font-size:10px;letter-spacing:.06em;color:var(--text-dim)}
+
+/* PAUSE — dark moment with candle after Journeys */
+.pause{padding:130px 64px;background:var(--charcoal);display:grid;grid-template-columns:0.55fr 1fr;gap:80px;align-items:center;position:relative;overflow:hidden}
+.pause::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(154,122,69,.06) 0%,transparent 60%)}
+.pause::after{content:'';position:absolute;inset:40px;border:1px solid rgba(154,122,69,.07);pointer-events:none}
+.pause-img-wrap{position:relative;z-index:1}
+.pause-img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;filter:brightness(.95)}
+.pause-img-wrap::before{content:'';position:absolute;inset:14px;border:1px solid rgba(154,122,69,.15);z-index:1;pointer-events:none}
+.pause-text{position:relative;z-index:1;max-width:560px}
+.pause-eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold-light);margin-bottom:32px}
+.pause-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold-mid)}
+.pause-quote{font-family:'Playfair Display',serif;font-size:clamp(28px,3.1vw,44px);font-weight:400;line-height:1.25;color:var(--ivory)}
+.pause-quote em{color:var(--gold-light)}
+.pause-sub{font-size:13.5px;line-height:2;color:rgba(250,247,242,.5);margin-top:30px;max-width:480px}
+
+/* CTA */
+.cta{padding:110px 64px;background:var(--parchment);display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.cta-copy{font-size:13.5px;line-height:2;color:var(--text-soft);margin-top:20px;max-width:420px}
+.cta-copy strong{color:var(--text);font-weight:400}
+.cta-r{display:flex;flex-direction:column;gap:14px}
+.btn-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--charcoal);color:var(--white);text-decoration:none;font-size:10px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;padding:18px 40px;transition:background .3s,transform .2s;cursor:none}
+.btn-cta:hover{background:var(--gold);transform:translateY(-1px)}
+.btn-cta svg{transition:transform .3s}
+.btn-cta:hover svg{transform:translateX(3px)}
+.trust-row{display:flex;align-items:center;justify-content:center;gap:18px;padding-top:12px;border-top:1px solid rgba(154,122,69,.15)}
+.trust-item{font-size:9.5px;letter-spacing:.08em;color:var(--text-dim)}
+.trust-item::before{content:'✓ ';color:var(--gold)}
+
+/* FOOTER */
+footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(154,122,69,.08)}
+.f-logo{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.22em;color:var(--ivory);text-transform:uppercase}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:24px;list-style:none}
+.f-links a{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(250,247,242,.3);text-decoration:none;transition:color .3s}
+.f-links a:hover{color:var(--gold)}
+.f-copy{font-size:9px;color:rgba(250,247,242,.2);letter-spacing:.06em}
+
+/* REVEAL */
+.r{opacity:0;transform:translateY(24px);transition:opacity .85s ease,transform .85s ease}
+.rl{opacity:0;transform:translateX(-22px);transition:opacity .85s ease,transform .85s ease}
+.rr{opacity:0;transform:translateX(22px);transition:opacity .85s ease,transform .85s ease}
+.r.v,.rl.v,.rr.v{opacity:1;transform:none}
+.d1{transition-delay:.13s}.d2{transition-delay:.26s}.d3{transition-delay:.39s}
+
+/* HAMBURGER */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+.ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:450;background:rgba(250,247,242,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;transition:opacity .3s}
+.mob-nav.open{display:flex;opacity:1}
+.mob-nav-logo{height:120px;width:auto;margin-bottom:16px}
+.mob-nav a{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;transition:color .3s}
+.mob-nav a:hover{color:var(--gold)}
+.mob-nav a.nav-btn{background:var(--gold);color:var(--white) !important;padding:14px 44px;font-size:10px;letter-spacing:.18em;margin-top:8px}
+.mob-nav a.nav-btn:hover{background:var(--charcoal) !important}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;font-size:18px;color:var(--charcoal);cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px}
+.mob-nav-close:hover{opacity:1}
+
+@media(max-width:900px){
+  body{cursor:auto}
+  .cur,.cur-r{display:none}
+  nav{padding:20px 24px}
+  nav.s{padding:14px 24px}
+  .nav-r{display:none}
+  .ham{display:flex}
+
+  /* Hero */
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-l{padding:120px 24px 60px}
+  .hero-l::after{display:none}
+  .hero-r{height:62vw;min-height:280px;order:-1}
+  .hero-actions{flex-direction:column;align-items:flex-start;gap:16px}
+
+  /* Invitation */
+  .invitation{grid-template-columns:1fr;padding:80px 24px;gap:48px}
+  .invitation-l{padding-right:0}
+
+  /* Philosophy */
+  .philosophy{grid-template-columns:1fr;padding:72px 24px;gap:48px}
+  .sanctuary-pillars{grid-template-columns:1fr 1fr}
+
+  /* Practice */
+  .practice{grid-template-columns:1fr;padding:72px 24px;gap:48px}
+  .practice-l{position:static}
+
+  /* Ritual band */
+  .ritual-band{height:auto;min-height:60vh;padding:80px 0}
+  .ritual-band-text{padding:80px 24px}
+
+  /* Journeys */
+  .journeys{padding:72px 24px}
+  .journeys-grid{grid-template-columns:1fr}
+
+  /* Pause */
+  .pause{grid-template-columns:1fr;padding:80px 24px;gap:48px}
+  .pause::after{display:none}
+
+  /* CTA */
+  .cta{grid-template-columns:1fr;padding:72px 24px;gap:36px}
+  .trust-row{flex-wrap:wrap;gap:12px;justify-content:center}
+
+  /* Footer */
+  footer{padding:36px 24px;flex-direction:column;gap:24px;text-align:center}
+  .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+}
+
+@media(max-width:600px){
+  .hero-title{font-size:clamp(36px,8vw,52px)}
+  .hero-sub{font-size:15px}
+  .stitle{font-size:clamp(28px,7vw,40px)}
+  .sanctuary-pillars{grid-template-columns:1fr}
+  .invitation-q{font-size:clamp(32px,8vw,46px)}
+  .pause-quote{font-size:clamp(24px,7vw,34px)}
+  .ritual-band-quote{font-size:clamp(20px,5.5vw,28px)}
+}
+</style>
+</head>
+<body>
+<div class="cur" id="c"></div>
+<div class="cur-r" id="cr"></div>
+
+<nav id="mob-nav" class="mob-nav">
+  <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <img src="images/tulua_logo_ARTWORK.svg" alt="Tulua" class="mob-nav-logo"/>
+  <a href="index.html">Home</a>
+  <a href="clubs.html">Clubs</a>
+  <a href="services.html">Services</a>
+  <a href="personal-training.html">Personal Training</a>
+  <a href="longevity.html">Longevity</a>
+  <a href="sanctuary.html">Sanctuary</a>
+  <a href="echo-by-tulua.html">Echo</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="#apply" class="nav-btn">Request Membership</a>
+</nav>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+    <img src="images/tulua_logo_ARTWORK.svg" alt="Tulua Logo" class="logo-img" style="height:60px;width:auto;">
+  </a>
+  <ul class="nav-r">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="sanctuary.html" class="active">Sanctuary</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#apply" class="nav-btn">Request Membership</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-l">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span style="color:rgba(154,122,69,.25)">—</span>
+      <span>Sanctuary</span>
+    </div>
+    <div class="eyebrow">A Private Sanctuary</div>
+    <h1 class="hero-title">A Sanctuary<br/>for your <em>nervous system.</em></h1>
+    <p class="hero-sub">Where the body and the breath finally exhale.</p>
+    <p class="hero-desc">Somatic bodywork, traditional Thai massage, breathwork and recovery — held in private rooms, by senior therapists, for the part of you that hasn't truly rested in a long time.</p>
+    <div class="hero-actions">
+      <a href="#apply" class="btn-main">
+        Request an Invitation
+        <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#practice" class="btn-ghost">Explore the Practice</a>
+    </div>
+  </div>
+  <div class="hero-r">
+    <img src="images/dominique-rivas-tVgjf-Jd-IU-unsplash.webp" alt="Tulua Sanctuary"/>
+  </div>
+</section>
+
+<!-- INVITATION — emotional opener -->
+<section class="invitation">
+  <div class="invitation-l rl">
+    <div class="invitation-eyebrow">A Quiet Invitation</div>
+    <h2 class="invitation-q">Are you ready<br/>to <em>truly rest?</em></h2>
+    <div class="invitation-copy">
+      <p>A simple question, asked only once. <strong>The body knows the answer before the mind catches up.</strong></p>
+      <p>Most of us have forgotten what real rest feels like — not the kind you collapse into after the day, but the kind that resets the breath, softens the held places, and leaves you slightly more yourself than when you came in.</p>
+    </div>
+    <p class="invitation-statement">The work at <span class="gold">Sanctuary</span> is to help you <em>remember.</em></p>
+  </div>
+  <div class="invitation-r rr">
+    <div class="invitation-img-wrap">
+      <img src="images/ilyuza-mingazova-SalCJqbw_O4-unsplash.jpg" alt="Tulua Sanctuary — stillness" class="invitation-img"/>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+  <div class="rl">
+    <p class="slabel">Our Philosophy</p>
+    <h2 class="stitle">Longevity isn't built<br/>in the gym <em>alone.</em></h2>
+    <div class="phil-copy">
+      <p>Real longevity rests on three pillars — <strong>training, nutrition and recovery.</strong> Most people invest in the first two and quietly neglect the third. It is the one that matters most.</p>
+      <p>Today, our deepest health problem is not effort. It's a nervous system that no longer finds rest. Chronic stress keeps the body in a constant state of alert. Sleep doesn't reset us. Days off don't feel restorative. Training, instead of building, slowly breaks us down.</p>
+      <p>Tulua is leading in Switzerland in uniting <strong>precision training with the science of true recovery.</strong> Strength built in the gym only becomes real when the nervous system can finally exhale.</p>
+    </div>
+    <div class="sanctuary-pillars">
+      <div class="pillar">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Training</div>
+        <div class="pillar-body">Strength, mobility and resilience — built progressively, sustained over decades.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Nutrition</div>
+        <div class="pillar-body">The fuel that lets the body adapt, repair and remain at its best.</div>
+      </div>
+      <div class="pillar is-emph">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Recovery</div>
+        <div class="pillar-body">Bodywork, breath and stillness — releasing what the body has been holding.</div>
+      </div>
+      <div class="pillar is-emph">
+        <div class="pillar-icon">◈</div>
+        <div class="pillar-title">Nervous System</div>
+        <div class="pillar-body">The state beneath everything else. Where Sanctuary does its deepest work.</div>
+      </div>
+    </div>
+  </div>
+  <div class="phil-img-wrap rr">
+    <img src="images/taylor-heery-_TyrA1RUaiI-unsplash.webp" alt="Tulua Sanctuary — bodywork" class="phil-img"/>
+  </div>
+</section>
+
+<!-- THE PRACTICE -->
+<section class="practice" id="practice">
+  <div class="practice-l rl">
+    <p class="slabel">The Practice</p>
+    <h2 class="stitle">Somatic Bodywork<br/>&amp; <em>Breathwork.</em></h2>
+    <div class="practice-copy">
+      <p>The door closes. The light dims. The room has been prepared for you. And for the next hour, there is only your <strong>breath, your body, and the slow undoing</strong> of everything you have been carrying.</p>
+      <p>Rooted in Traditional Thai healing arts, refined over years of one-to-one practice. Not symptom-driven, but state-driven — touching the breath, the fascia, the held places, until the nervous system understands it is finally safe to let go.</p>
+    </div>
+    <p class="practice-quote">The body remembers what the mind has long forgotten. The work is to listen.</p>
+  </div>
+  <div class="practice-elements rr">
+    <div class="practice-el">
+      <div class="practice-el-n">i</div>
+      <div>
+        <div class="practice-el-name">Traditional Thai Bodywork</div>
+        <div class="practice-el-desc">The foundation. Rhythmic compression and assisted stretching, refined over centuries — performed clothed, on a futon, by a senior therapist.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">ii</div>
+      <div>
+        <div class="practice-el-name">Fascia Release</div>
+        <div class="practice-el-desc">The connective tissue beneath the muscle, freed of the tension it has been holding — sometimes for years.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">iii</div>
+      <div>
+        <div class="practice-el-name">Deep Stretching &amp; Mobilization</div>
+        <div class="practice-el-desc">Joints opened. Range restored. The body remembering its full reach.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">iv</div>
+      <div>
+        <div class="practice-el-name">Abdominal Tension Release</div>
+        <div class="practice-el-desc">The most overlooked seat of held stress in the modern body. Worked slowly, with intention.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">v</div>
+      <div>
+        <div class="practice-el-name">Guided Breathwork</div>
+        <div class="practice-el-desc">The fastest route into the parasympathetic state. A practice the body re-learns to access on its own.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">vi</div>
+      <div>
+        <div class="practice-el-name">Trigger Point Therapy</div>
+        <div class="practice-el-desc">The single point that, released, allows three others to soften.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">vii</div>
+      <div>
+        <div class="practice-el-name">Stress Regulation</div>
+        <div class="practice-el-desc">Tools that go with you — off the table and into the week.</div>
+      </div>
+    </div>
+    <div class="practice-el">
+      <div class="practice-el-n">viii</div>
+      <div>
+        <div class="practice-el-name">Body Awareness</div>
+        <div class="practice-el-desc">What you didn't know you were carrying. Felt, named, set down.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RITUAL BAND — full-width atmospheric -->
+<section class="ritual-band">
+  <img src="images/roberto-shumski-IikyopioX64-unsplash.webp" alt="Tulua Sanctuary — the practice"/>
+  <div class="ritual-band-text">
+    <div class="ritual-band-eyebrow">In the room</div>
+    <p class="ritual-band-quote">No agenda. No schedule pressing against the time.<br/>Just the breath, the touch, and the <em>slow unmaking</em> of the week.</p>
+  </div>
+</section>
+
+<!-- THE JOURNEYS — three doors in -->
+<section class="journeys">
+  <div class="journeys-header r">
+    <p class="slabel">The Journeys</p>
+    <h2 class="stitle">Three <em>ways in.</em></h2>
+    <p>One practice. Three different starting points — depending on what you bring through the door. Most members begin with one and, over time, find themselves naturally moving between them.</p>
+  </div>
+  <div class="journeys-grid">
+    <div class="journey r">
+      <div class="journey-num">01</div>
+      <h3 class="journey-name"><em>Stress</em><br/>Reset</h3>
+      <p class="journey-desc">For when the nervous system can't find rest — the racing thoughts, the held shoulders, the sleep that doesn't quite work. Direct, deep relief through breath, fascia release and parasympathetic activation. The session most members begin with.</p>
+      <div class="journey-meta">
+        <div class="journey-duration">60–75 min</div>
+        <div class="journey-avail">By appointment</div>
+      </div>
+    </div>
+    <div class="journey r d1">
+      <div class="journey-num">02</div>
+      <h3 class="journey-name"><em>Deep</em><br/>Release</h3>
+      <p class="journey-desc">For chronic tension and the patterns the body keeps holding long after the situation has passed. Trigger point work, abdominal release, deep stretching. The session for those who carry something stubborn.</p>
+      <div class="journey-meta">
+        <div class="journey-duration">75–90 min</div>
+        <div class="journey-avail">By appointment</div>
+      </div>
+    </div>
+    <div class="journey r d2">
+      <div class="journey-num">03</div>
+      <h3 class="journey-name">Balance</h3>
+      <p class="journey-desc">For those ready to go further. A slower, integrative session combining breath, body and presence — creating space for what wants to release, and for what wants to be heard.</p>
+      <div class="journey-meta">
+        <div class="journey-duration">90–120 min</div>
+        <div class="journey-avail">By appointment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAUSE — dark closing moment -->
+<section class="pause">
+  <div class="pause-img-wrap rl">
+    <img src="images/andrei-castanha-reh6rlAXr5Y-unsplash.webp" alt="Tulua Sanctuary — the ritual" class="pause-img"/>
+  </div>
+  <div class="pause-text rr">
+    <div class="pause-eyebrow">A Promise</div>
+    <p class="pause-quote">An hour from now,<br/>the world will sound <em>quieter.</em><br/>Your body will remember<br/>what rest <em>feels like.</em></p>
+    <p class="pause-sub">You don't have to know what you need. You only have to walk through the door. The rest, we'll find together.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="apply">
+  <div class="r">
+    <p class="slabel">Begin Here</p>
+    <h2 class="stitle">Step into the<br/><em>sanctuary.</em></h2>
+    <p class="cta-copy">Request an invitation and let us arrange your first visit. <strong>Bring nothing but what you have been carrying.</strong> We will take care of the rest.</p>
+  </div>
+  <div class="cta-r r d1">
+    <a href="contact.html" class="btn-cta">
+      Request an Invitation
+      <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <div class="trust-row">
+      <div class="trust-item">No obligation</div>
+      <div class="trust-item">24h response</div>
+      <div class="trust-item">Complete discretion</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">Tulu<span>a</span> Health Clubs</div>
+  <ul class="f-links">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="sanctuary.html">Sanctuary</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland &nbsp;·&nbsp; <a href="impressum.html" style="color:rgba(250,247,242,.2);text-decoration:none;transition:color .3s">Impressum</a></p>
+</footer>
+
+<script>
+// Cursor
+const c=document.getElementById('c'),cr=document.getElementById('cr');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+(function a(){c.style.cssText=`left:${mx}px;top:${my}px`;rx+=(mx-rx)*.11;ry+=(my-ry)*.11;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(a)})();
+document.querySelectorAll('a,button,input,select').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cr.style.width='44px';cr.style.height='44px';cr.style.borderColor='rgba(154,122,69,.65)'});
+  el.addEventListener('mouseleave',()=>{cr.style.width='30px';cr.style.height='30px';cr.style.borderColor='rgba(154,122,69,.4)'});
+});
+
+// Nav scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
+
+// Reveal on scroll
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.r,.rl,.rr').forEach(el=>io.observe(el));
+
+// Mobile nav
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';
+});
+document.getElementById('mob-nav-close').addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+}));
+</script>
+</body>
+</html>
