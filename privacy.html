@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="js/consent.js"></script>
+<meta charset="UTF-8"/>
+<link rel="canonical" href="https://tulua.ch/privacy.html"/>
+<meta property="og:title" content="Privacy Policy — Tulua Health Clubs"/>
+<meta property="og:description" content="How Tulua Health Clubs collects, uses and protects your personal information. Compliant with Swiss FADP and EU GDPR."/>
+<meta property="og:url" content="https://tulua.ch/privacy.html"/>
+<meta property="og:type" content="website"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Privacy Policy — Tulua Health Clubs</title>
+<meta name="description" content="How Tulua Health Clubs collects, uses and protects your personal information. Compliant with Swiss FADP and EU GDPR."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ivory:#faf7f2;--cream:#f4efe6;--parchment:#ede5d8;
+  --gold:#9a7a45;--gold-mid:#b8965a;--gold-light:#c9a96e;
+  --charcoal:#222018;--stone:#5c5248;
+  --text:#3a3028;--text-soft:#6e6258;--text-dim:#a89e94;--white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--text);font-family:'Jost',sans-serif;font-weight:300;font-size:14px;letter-spacing:.02em;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");opacity:.45;mix-blend-mode:multiply}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:400;padding:28px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav:not(.s){background:linear-gradient(to bottom,rgba(250,247,242,.85) 0%,transparent 100%)}
+nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18px);border-bottom:1px solid rgba(154,122,69,.1)}
+.logo{font-family:'Playfair Display',serif;font-size:17px;font-weight:400;letter-spacing:.24em;color:var(--charcoal);text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;font-weight:400}
+.nav-r a:hover,.nav-r a.active{color:var(--gold)}
+.nav-btn{background:var(--gold);color:var(--white) !important;padding:10px 24px;font-size:9.5px !important;letter-spacing:.18em;transition:background .3s !important}
+.nav-btn:hover{background:var(--charcoal) !important}
+
+/* HERO */
+.hero{padding:160px 64px 80px;background:var(--ivory);text-align:left;max-width:1180px;margin:0 auto}
+.breadcrumb{display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-dim);margin-bottom:24px}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .3s}
+.breadcrumb a:hover{color:var(--gold)}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,68px);font-weight:400;line-height:1;color:var(--charcoal);margin-bottom:24px}
+.hero-title em{font-style:italic;color:var(--gold);font-weight:300}
+.hero-meta{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim)}
+
+/* CONTENT */
+.content{padding:60px 64px 120px;max-width:820px;margin:0 auto}
+.content section{margin-bottom:56px}
+.content section:last-child{margin-bottom:0}
+.s-num{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:var(--gold);margin-bottom:8px;letter-spacing:.02em}
+.s-title{font-family:'Playfair Display',serif;font-size:clamp(22px,2.4vw,30px);font-weight:400;color:var(--charcoal);margin-bottom:24px;line-height:1.2}
+.content p{font-size:14px;line-height:1.95;color:var(--text-soft);margin-bottom:14px}
+.content p:last-child{margin-bottom:0}
+.content strong{color:var(--text);font-weight:400}
+.content a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(154,122,69,.3);transition:color .3s,border-color .3s}
+.content a:hover{color:var(--charcoal);border-color:var(--charcoal)}
+.content ul{list-style:none;margin:14px 0;padding:0}
+.content ul li{font-size:14px;line-height:1.85;color:var(--text-soft);padding-left:20px;position:relative;margin-bottom:6px}
+.content ul li::before{content:'·';color:var(--gold);font-size:16px;position:absolute;left:6px;top:-2px}
+.contact-block{background:var(--cream);padding:24px 28px;margin-top:16px;border-left:2px solid var(--gold)}
+.contact-block p{margin-bottom:6px;font-size:13.5px;line-height:1.8;color:var(--text)}
+.contact-block p:last-child{margin-bottom:0}
+
+/* TABLE — cookies */
+.cookie-table{margin:24px 0;border-top:1px solid rgba(154,122,69,.18);width:100%}
+.cookie-row{display:grid;grid-template-columns:1fr 1.4fr 1.4fr;gap:20px;padding:18px 0;border-bottom:1px solid rgba(154,122,69,.1)}
+.cookie-row.head{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);padding:14px 0}
+.cookie-cell{font-size:12.5px;line-height:1.7;color:var(--text-soft)}
+.cookie-cell strong{color:var(--text);font-weight:400}
+
+/* FOOTER */
+footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(154,122,69,.08);flex-wrap:wrap;gap:20px}
+.f-logo{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.22em;color:var(--ivory);text-transform:uppercase}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:24px;list-style:none}
+.f-links a{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(250,247,242,.3);text-decoration:none;transition:color .3s;cursor:pointer;background:none;border:none;font-family:inherit;padding:0}
+.f-links a:hover{color:var(--gold)}
+.f-copy{font-size:9px;color:rgba(250,247,242,.2);letter-spacing:.06em}
+
+/* HAMBURGER */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+.ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:450;background:rgba(250,247,242,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;transition:opacity .3s}
+.mob-nav.open{display:flex;opacity:1}
+.mob-nav a{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;transition:color .3s}
+.mob-nav a:hover{color:var(--gold)}
+.mob-nav a.nav-btn{background:var(--gold);color:var(--white) !important;padding:14px 44px;font-size:10px;letter-spacing:.18em;margin-top:8px}
+.mob-nav-logo{height:120px;width:auto;margin-bottom:16px}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;font-size:18px;color:var(--charcoal);cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px}
+.mob-nav-close:hover{opacity:1}
+
+@media(max-width:900px){
+  nav{padding:20px 24px}
+  nav.s{padding:14px 24px}
+  .nav-r{display:none}
+  .ham{display:flex}
+  .hero{padding:120px 24px 50px}
+  .content{padding:40px 24px 80px}
+  .cookie-row{grid-template-columns:1fr;gap:6px;padding:14px 0}
+  .cookie-row.head{display:none}
+  .cookie-cell::before{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:4px;font-family:'Jost',sans-serif}
+  .cookie-cell:nth-child(1)::before{content:'Tool'}
+  .cookie-cell:nth-child(2)::before{content:'Purpose'}
+  .cookie-cell:nth-child(3)::before{content:'Data Stored'}
+  footer{padding:36px 24px;flex-direction:column;text-align:center;gap:24px}
+  .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+}
+</style>
+</head>
+<body>
+
+<nav id="mob-nav" class="mob-nav">
+  <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <img src="images/tulua_logo_ARTWORK.svg" alt="Tulua" class="mob-nav-logo"/>
+  <a href="index.html">Home</a>
+  <a href="clubs.html">Clubs</a>
+  <a href="services.html">Services</a>
+  <a href="personal-training.html">Personal Training</a>
+  <a href="longevity.html">Longevity</a>
+  <a href="echo-by-tulua.html">Echo</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="#apply" class="nav-btn">Request Membership</a>
+</nav>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+    <img src="images/tulua_logo_ARTWORK.svg" alt="Tulua Logo" style="height:60px;width:auto;">
+  </a>
+  <ul class="nav-r">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html#apply" class="nav-btn">Request Membership</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span style="color:rgba(154,122,69,.25)">—</span>
+    <span>Privacy</span>
+  </div>
+  <div class="eyebrow">Data & Privacy</div>
+  <h1 class="hero-title">Privacy <em>Policy.</em></h1>
+  <p class="hero-meta">Last updated · 12 June 2026</p>
+</section>
+
+<!-- CONTENT -->
+<main class="content">
+
+  <section>
+    <p>This Privacy Policy explains how <strong>Tulua GmbH</strong> ("Tulua", "we", "us") collects, uses and protects your personal information when you visit tulua.ch, submit a membership enquiry or correspond with our team.</p>
+    <p>We comply with the <strong>Swiss Federal Act on Data Protection (FADP)</strong> and, for visitors from the European Economic Area, with the <strong>EU General Data Protection Regulation (GDPR)</strong>.</p>
+  </section>
+
+  <section>
+    <p class="s-num">i</p>
+    <h2 class="s-title">Who we are</h2>
+    <div class="contact-block">
+      <p><strong>Tulua GmbH</strong></p>
+      <p>Rotfluhstrasse 98, 8702 Zollikon, Switzerland</p>
+      <p>Email: <a href="mailto:contact@tulua.ch">contact@tulua.ch</a></p>
+      <p>Phone: +41 76 500 33 38</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="s-num">ii</p>
+    <h2 class="s-title">What information we collect</h2>
+    <p>When you submit a membership enquiry or contact form on our website, we collect the information you provide voluntarily:</p>
+    <ul>
+      <li>Your name (first and last)</li>
+      <li>Email address</li>
+      <li>Phone number, if provided</li>
+      <li>Preferred location (Thalwil or Zollikon)</li>
+      <li>Any message or details you choose to share</li>
+    </ul>
+    <p>When you visit tulua.ch <strong>and have consented to analytics cookies</strong>, we may automatically collect:</p>
+    <ul>
+      <li>IP address and approximate geographic region</li>
+      <li>Browser type, language and operating system</li>
+      <li>Pages visited, time spent and interaction events</li>
+      <li>Referring website or advertisement</li>
+    </ul>
+    <p>If you decline cookies, none of the automatic data above is collected.</p>
+  </section>
+
+  <section>
+    <p class="s-num">iii</p>
+    <h2 class="s-title">How we use your information</h2>
+    <p>We use the information you provide to:</p>
+    <ul>
+      <li>Respond to your enquiries and arrange your first visit</li>
+      <li>Maintain direct correspondence about your membership</li>
+      <li>Improve our website and the experience we offer (with consent)</li>
+      <li>Measure the effectiveness of our advertising (with consent)</li>
+    </ul>
+    <p><strong>We do not sell your data.</strong> We do not share it with third parties for marketing purposes.</p>
+  </section>
+
+  <section>
+    <p class="s-num">iv</p>
+    <h2 class="s-title">Cookies and tracking technologies</h2>
+    <p>We use a small number of tools on tulua.ch. All non-essential tools are blocked until you give consent via the banner at the bottom of the page.</p>
+    <div class="cookie-table">
+      <div class="cookie-row head">
+        <div>Tool</div>
+        <div>Purpose</div>
+        <div>Data stored</div>
+      </div>
+      <div class="cookie-row">
+        <div class="cookie-cell"><strong>Google Analytics 4</strong></div>
+        <div class="cookie-cell">Anonymous traffic analysis and aggregated reporting</div>
+        <div class="cookie-cell">Cookie ID, page views, session info (14-month retention)</div>
+      </div>
+      <div class="cookie-row">
+        <div class="cookie-cell"><strong>Google Ads Conversion</strong></div>
+        <div class="cookie-cell">Measure effectiveness of our advertising campaigns</div>
+        <div class="cookie-cell">Cookie ID and form-submission events</div>
+      </div>
+      <div class="cookie-row">
+        <div class="cookie-cell"><strong>Vimeo</strong></div>
+        <div class="cookie-cell">Embedded video on the Longevity page</div>
+        <div class="cookie-cell">Playback cookies set by Vimeo</div>
+      </div>
+      <div class="cookie-row">
+        <div class="cookie-cell"><strong>Netlify Forms</strong></div>
+        <div class="cookie-cell">Processes membership enquiries (essential)</div>
+        <div class="cookie-cell">The form data you submit</div>
+      </div>
+      <div class="cookie-row">
+        <div class="cookie-cell"><strong>Local Storage</strong></div>
+        <div class="cookie-cell">Remembers your cookie preference (essential)</div>
+        <div class="cookie-cell">One item: your consent decision</div>
+      </div>
+    </div>
+    <p>You can change your cookie preferences at any time using the <a href="#" onclick="if(window.TuluaConsent){TuluaConsent.showBanner()};return false;">Cookies link in the footer</a> below.</p>
+  </section>
+
+  <section>
+    <p class="s-num">v</p>
+    <h2 class="s-title">Your rights</h2>
+    <p>Under Swiss FADP and EU GDPR you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> the personal data we hold about you</li>
+      <li><strong>Correct</strong> inaccurate or incomplete data</li>
+      <li><strong>Delete</strong> your data (right to be forgotten)</li>
+      <li><strong>Object</strong> to or restrict certain processing</li>
+      <li><strong>Receive</strong> a copy of your data in a portable format</li>
+      <li><strong>Withdraw consent</strong> at any time, without affecting prior lawful processing</li>
+    </ul>
+    <p>To exercise any of these rights, please email <a href="mailto:contact@tulua.ch">contact@tulua.ch</a>. We respond personally within 30 days.</p>
+  </section>
+
+  <section>
+    <p class="s-num">vi</p>
+    <h2 class="s-title">Data retention</h2>
+    <ul>
+      <li><strong>Membership enquiries:</strong> kept while you are in active dialogue with us, plus 12 months</li>
+      <li><strong>Analytics data:</strong> 14 months (Google Analytics 4 default)</li>
+      <li><strong>Advertising data:</strong> conversion events anonymised after 90 days</li>
+      <li><strong>Cookie consent:</strong> stored locally on your device until you reset it</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="s-num">vii</p>
+    <h2 class="s-title">Third parties we work with</h2>
+    <p>We rely on a small number of trusted providers to operate our website. Each of these may process limited data on our behalf:</p>
+    <ul>
+      <li><strong>Netlify</strong> — hosting and form processing — <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">netlify.com/privacy</a></li>
+      <li><strong>Google LLC</strong> — Analytics and Ads — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+      <li><strong>Vimeo</strong> — video playback — <a href="https://vimeo.com/privacy" target="_blank" rel="noopener">vimeo.com/privacy</a></li>
+      <li><strong>Google Fonts</strong> — typography (Playfair Display, Jost) — loaded via fonts.googleapis.com</li>
+    </ul>
+    <p>These providers may store data outside Switzerland (typically in the European Union or the United States). Where data leaves Switzerland, we rely on the providers' Standard Contractual Clauses or equivalent legal safeguards.</p>
+  </section>
+
+  <section>
+    <p class="s-num">viii</p>
+    <h2 class="s-title">Contact</h2>
+    <p>For any privacy-related question or to exercise your rights, please contact us at:</p>
+    <div class="contact-block">
+      <p><strong>Tulua GmbH</strong></p>
+      <p>Rotfluhstrasse 98, 8702 Zollikon, Switzerland</p>
+      <p>Email: <a href="mailto:contact@tulua.ch">contact@tulua.ch</a></p>
+    </div>
+  </section>
+
+  <section>
+    <p class="s-num">ix</p>
+    <h2 class="s-title">Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practice or the law. The date of the most recent revision appears at the top of this page. We encourage you to review it periodically.</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-logo">Tulu<span>a</span> Health Clubs</div>
+  <ul class="f-links">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="#" onclick="if(window.TuluaConsent){TuluaConsent.showBanner()};return false;">Cookies</a></li>
+  </ul>
+  <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland &nbsp;·&nbsp; <a href="impressum.html" style="color:rgba(250,247,242,.2);text-decoration:none;transition:color .3s">Impressum</a></p>
+</footer>
+
+<script>
+// Nav scroll
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
+
+// Mobile nav
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('open');
+  mobNav.classList.toggle('open');
+  document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';
+});
+document.getElementById('mob-nav-close').addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  ham.classList.remove('open');mobNav.classList.remove('open');
+  document.body.style.overflow='';
+}));
+</script>
+</body>
+</html>

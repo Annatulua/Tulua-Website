@@ -2,14 +2,7 @@
 <html lang="en">
 <head>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VSCPVLNPTM');
-  gtag('config', 'AW-993742689');
-</script>
+<script src="js/consent.js"></script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="canonical" href="https://tulua.ch/impressum.html"/>
@@ -267,6 +260,8 @@ footer{
 
 <footer>
   <span class="f-copy">© Tulua GmbH 2026 · Thalwil & Zollikon, Switzerland</span>
+  <a href="privacy.html" class="f-back">Privacy</a>
+  <a href="#" onclick="if(window.TuluaConsent){TuluaConsent.showBanner()};return false;" class="f-back">Cookies</a>
   <a href="index.html" class="f-back">Return to Tulua</a>
 </footer>
 

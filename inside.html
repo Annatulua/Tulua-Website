@@ -2,14 +2,7 @@
 <html lang="en">
 <head>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSCPVLNPTM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VSCPVLNPTM');
-  gtag('config', 'AW-993742689');
-</script>
+<script src="js/consent.js"></script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Inside Tulua — Private Access Request</title>
@@ -299,7 +292,7 @@
         <span style="width:32px;height:1px;background:rgba(154,122,69,.35);display:inline-block"></span>
       </div>
       <div style="padding:75% 0 0 0;position:relative;border:1px solid rgba(154,122,69,.12)">
-        <iframe src="https://player.vimeo.com/video/1178132582?badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sneak Peek — Inside Tulua"></iframe>
+        <iframe data-vimeo-src="https://player.vimeo.com/video/1178132582?badge=0&autopause=0&player_id=0&app_id=58479" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sneak Peek — Inside Tulua"></iframe>
       </div>
     </div>
 
@@ -372,6 +365,8 @@
 
 <footer>
   <span class="f-copy">© Tulua GmbH 2026 · Zollikon & Thalwil, Switzerland</span>
+  <a href="privacy.html" class="f-back">Privacy</a>
+  <a href="#" onclick="if(window.TuluaConsent){TuluaConsent.showBanner()};return false;" class="f-back">Cookies</a>
   <a href="index.html" class="f-back">Return to Tulua</a>
 </footer>
 
