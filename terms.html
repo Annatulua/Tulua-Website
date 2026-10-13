@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="js/consent.js"></script>
+<meta charset="UTF-8"/>
+<link rel="canonical" href="https://tulua.ch/terms.html"/>
+<meta property="og:title" content="Terms of Membership — Tulua Health Clubs"/>
+<meta property="og:description" content="Terms governing membership at Tulua Health Clubs."/>
+<meta property="og:url" content="https://tulua.ch/terms.html"/>
+<meta property="og:type" content="website"/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Terms of Membership — Tulua Health Clubs</title>
+<meta name="description" content="Terms governing membership at Tulua Health Clubs in Thalwil and Zollikon."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ivory:#faf7f2;--cream:#f4efe6;--parchment:#ede5d8;
+  --gold:#9a7a45;--gold-mid:#b8965a;--gold-light:#c9a96e;
+  --charcoal:#222018;--stone:#5c5248;
+  --text:#3a3028;--text-soft:#6e6258;--text-dim:#a89e94;--white:#ffffff;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--text);font-family:'Jost',sans-serif;font-weight:300;font-size:14px;letter-spacing:.02em;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");opacity:.45;mix-blend-mode:multiply}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:400;padding:28px 60px;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav:not(.s){background:linear-gradient(to bottom,rgba(250,247,242,.85) 0%,transparent 100%)}
+nav.s{padding:16px 60px;background:rgba(250,247,242,.97);backdrop-filter:blur(18px);border-bottom:1px solid rgba(154,122,69,.1)}
+.logo{font-family:'Playfair Display',serif;font-size:17px;font-weight:400;letter-spacing:.24em;color:var(--charcoal);text-decoration:none;text-transform:uppercase}
+.logo span{color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-r a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color .3s;font-weight:400}
+.nav-r a:hover,.nav-r a.active{color:var(--gold)}
+.nav-btn{background:var(--gold);color:var(--white) !important;padding:10px 24px;font-size:9.5px !important;letter-spacing:.18em;transition:background .3s !important}
+.nav-btn:hover{background:var(--charcoal) !important}
+
+.hero{padding:160px 64px 80px;background:var(--ivory);max-width:1180px;margin:0 auto}
+.breadcrumb{display:flex;align-items:center;gap:10px;font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--text-dim);margin-bottom:24px}
+.breadcrumb a{color:var(--text-dim);text-decoration:none;transition:color .3s}
+.breadcrumb a:hover{color:var(--gold)}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:9px;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(40px,5vw,68px);font-weight:400;line-height:1;color:var(--charcoal);margin-bottom:24px}
+.hero-title em{font-style:italic;color:var(--gold);font-weight:300}
+.hero-meta{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-dim)}
+
+.draft-notice{max-width:820px;margin:0 auto;padding:0 64px}
+.draft-notice-inner{background:rgba(154,122,69,.08);border-left:2px solid var(--gold);padding:18px 22px;font-size:12px;line-height:1.75;color:var(--text-soft)}
+.draft-notice-inner strong{color:var(--charcoal);font-weight:400}
+
+.content{padding:50px 64px 120px;max-width:820px;margin:0 auto}
+.content section{margin-bottom:48px}
+.content section:last-child{margin-bottom:0}
+.s-num{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:var(--gold);margin-bottom:8px;letter-spacing:.02em}
+.s-title{font-family:'Playfair Display',serif;font-size:clamp(20px,2.2vw,28px);font-weight:400;color:var(--charcoal);margin-bottom:20px;line-height:1.2}
+.content p{font-size:14px;line-height:1.95;color:var(--text-soft);margin-bottom:12px}
+.content p:last-child{margin-bottom:0}
+.content p.sub{padding-left:18px;margin-bottom:8px}
+.content strong{color:var(--text);font-weight:400}
+.content a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(154,122,69,.3);transition:color .3s,border-color .3s}
+.content a:hover{color:var(--charcoal);border-color:var(--charcoal)}
+.content ul{list-style:none;margin:12px 0;padding:0}
+.content ul li{font-size:14px;line-height:1.85;color:var(--text-soft);padding-left:20px;position:relative;margin-bottom:6px}
+.content ul li::before{content:'·';color:var(--gold);font-size:16px;position:absolute;left:6px;top:-2px}
+.placeholder{background:rgba(154,122,69,.12);color:var(--charcoal);padding:1px 6px;font-family:'Jost',sans-serif;font-size:13px;font-weight:400;border-radius:2px}
+
+footer{background:var(--charcoal);padding:44px 64px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(154,122,69,.08);flex-wrap:wrap;gap:20px}
+.f-logo{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.22em;color:var(--ivory);text-transform:uppercase}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:24px;list-style:none}
+.f-links a{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(250,247,242,.3);text-decoration:none;transition:color .3s;cursor:pointer;background:none;border:none;font-family:inherit;padding:0}
+.f-links a:hover{color:var(--gold)}
+.f-copy{font-size:9px;color:rgba(250,247,242,.2);letter-spacing:.06em}
+
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;position:relative;z-index:460}
+.ham span{display:block;width:22px;height:1px;background:var(--charcoal);transition:all .3s}
+.ham.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;inset:0;z-index:450;background:rgba(250,247,242,.98);backdrop-filter:blur(18px);flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;transition:opacity .3s}
+.mob-nav.open{display:flex;opacity:1}
+.mob-nav a{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--charcoal);text-decoration:none;transition:color .3s}
+.mob-nav a:hover{color:var(--gold)}
+.mob-nav a.nav-btn{background:var(--gold);color:var(--white) !important;padding:14px 44px;font-size:10px;letter-spacing:.18em;margin-top:8px}
+.mob-nav-logo{height:120px;width:auto;margin-bottom:16px}
+.mob-nav-close{position:absolute;top:24px;right:24px;background:none;border:none;font-size:18px;color:var(--charcoal);cursor:pointer;opacity:.5;transition:opacity .2s;line-height:1;padding:8px}
+.mob-nav-close:hover{opacity:1}
+
+@media(max-width:900px){
+  nav{padding:20px 24px}
+  nav.s{padding:14px 24px}
+  .nav-r{display:none}
+  .ham{display:flex}
+  .hero{padding:120px 24px 40px}
+  .draft-notice{padding:0 24px}
+  .content{padding:30px 24px 80px}
+  footer{padding:36px 24px;flex-direction:column;text-align:center;gap:24px}
+  .f-links{flex-wrap:wrap;justify-content:center;gap:16px}
+}
+</style>
+</head>
+<body>
+
+<nav id="mob-nav" class="mob-nav">
+  <button class="mob-nav-close" id="mob-nav-close" aria-label="Close menu">✕</button>
+  <img src="images/tulua_logo_ARTWORK.svg" alt="Tulua" class="mob-nav-logo"/>
+  <a href="index.html">Home</a>
+  <a href="clubs.html">Clubs</a>
+  <a href="services.html">Services</a>
+  <a href="personal-training.html">Personal Training</a>
+  <a href="longevity.html">Longevity</a>
+  <a href="echo-by-tulua.html">Echo</a>
+  <a href="story.html">Our Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html#apply" class="nav-btn">Request Membership</a>
+</nav>
+
+<nav id="nav">
+  <a href="index.html" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+    <img src="images/tulua_logo_ARTWORK.svg" alt="Tulua Logo" style="height:60px;width:auto;">
+  </a>
+  <ul class="nav-r">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="story.html">Our Story</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html#apply" class="nav-btn">Request Membership</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="hero">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span style="color:rgba(154,122,69,.25)">—</span>
+    <span>Terms</span>
+  </div>
+  <div class="eyebrow">Membership</div>
+  <h1 class="hero-title">Terms of <em>Membership.</em></h1>
+  <p class="hero-meta">Last updated · 12 June 2026</p>
+</section>
+
+<div class="draft-notice">
+  <div class="draft-notice-inner">
+    <strong>Note:</strong> This document is the basis of the contractual relationship between Tulua GmbH and each member. Items shown in <span class="placeholder">[brackets]</span> are placeholders to be set on the active price list and membership confirmation. We recommend reviewing this document with your Swiss legal advisor before promoting it widely.
+  </div>
+</div>
+
+<main class="content">
+
+  <section>
+    <p>These Terms of Membership ("Terms") govern your relationship with <strong>Tulua GmbH</strong> ("Tulua", "we", "us") and form the legal basis of your Tulua Health Clubs membership. By accepting an invitation to join and signing your membership application, you agree to be bound by these Terms together with our <a href="privacy.html">Privacy Policy</a> and any house rules communicated to you.</p>
+  </section>
+
+  <section>
+    <p class="s-num">i</p>
+    <h2 class="s-title">Scope and parties</h2>
+    <p>These Terms apply to all members of Tulua Health Clubs, operated by Tulua GmbH, Albisstrasse 13, 8800 Thalwil, Switzerland. They take effect upon mutual signing of your membership application.</p>
+  </section>
+
+  <section>
+    <p class="s-num">ii</p>
+    <h2 class="s-title">Membership by invitation</h2>
+    <p>Tulua is a private, invitation-only club. Membership is offered at our sole discretion following a personal enquiry and conversation. We reserve the right to decline any application without explanation.</p>
+    <p>Acceptance becomes effective once all of the following are in place:</p>
+    <ul>
+      <li>Your membership application has been countersigned by Tulua</li>
+      <li>Your initial membership fee has been received</li>
+      <li>Your health declaration (Section ix) has been completed and signed</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="s-num">iii</p>
+    <h2 class="s-title">Membership types and fees</h2>
+    <p>Membership types, their inclusions and applicable fees are set out in our active price list, which forms part of these Terms. Fees are quoted in Swiss Francs (CHF) and are due in advance unless otherwise agreed in writing.</p>
+    <p>The price list may be updated from time to time. Any changes apply only to new memberships and to renewals after the change takes effect, never retroactively within a current term.</p>
+  </section>
+
+  <section>
+    <p class="s-num">iv</p>
+    <h2 class="s-title">Term, renewal and cancellation</h2>
+    <p>The initial membership term is <span class="placeholder">[12 months / as stated in your membership confirmation]</span>.</p>
+    <p>Membership renews automatically for successive <span class="placeholder">[12-month / monthly]</span> periods unless either party gives written notice <span class="placeholder">[3 months / as stated]</span> before expiry of the current term.</p>
+    <p>Notice of cancellation must be sent by email to <a href="mailto:contact@tulua.ch">contact@tulua.ch</a> or by registered post to the address in Section i.</p>
+    <p>Tulua may terminate the membership with immediate effect for material breach of these Terms or for conduct incompatible with the discretion and culture of the club.</p>
+  </section>
+
+  <section>
+    <p class="s-num">v</p>
+    <h2 class="s-title">Pause and suspension</h2>
+    <p>A member may request a temporary pause of their membership for reasons of illness, extended travel or other personal circumstances. Pauses are granted at Tulua's discretion. During a paused period, applicable fees may continue to apply at a reduced rate as set out in the price list.</p>
+  </section>
+
+  <section>
+    <p class="s-num">vi</p>
+    <h2 class="s-title">Services included</h2>
+    <p>Your membership entitles you to the services described in your membership confirmation. Booking of personal training, Sanctuary treatments, cryotherapy, IHHT and other services is required and is subject to availability.</p>
+    <p>Tulua reserves the right to adjust schedules, programmes and service formats without notice, provided the core offering remains substantially equivalent.</p>
+  </section>
+
+  <section>
+    <p class="s-num">vii</p>
+    <h2 class="s-title">Bookings, cancellations and no-shows</h2>
+    <p>Sessions must be booked through our booking system or directly with the Tulua team.</p>
+    <p>Cancellations are free of charge if made at least <span class="placeholder">[24 hours]</span> before the scheduled session. Cancellations made later, and no-shows, will be deducted from your session quota or may be charged at the full session rate, at Tulua's discretion.</p>
+  </section>
+
+  <section>
+    <p class="s-num">viii</p>
+    <h2 class="s-title">Locations and access</h2>
+    <p>Membership grants access to both Tulua locations — Albisstrasse 13 in Thalwil and Rotfluhstrasse 98 in Zollikon — during published opening hours. Access is personal and non-transferable.</p>
+  </section>
+
+  <section>
+    <p class="s-num">ix</p>
+    <h2 class="s-title">Health declaration and personal responsibility</h2>
+    <p>Before commencing any physical activity at Tulua, you must complete and sign our health declaration.</p>
+    <p>You confirm that you are in adequate physical condition to engage in the services you book and have consulted your own physician where appropriate.</p>
+    <p>You acknowledge that <strong>whole-body cryotherapy at −195°C</strong>, intensive bodywork, breath-work and certain longevity therapies carry specific contraindications. You agree to inform Tulua promptly of any condition, medication or change in health that may affect your safety.</p>
+    <p>You participate in all activities at your own risk. Tulua, our employees and contractors do not provide medical advice and do not replace the assessment or care of qualified medical practitioners.</p>
+  </section>
+
+  <section>
+    <p class="s-num">x</p>
+    <h2 class="s-title">Liability</h2>
+    <p>Tulua, its employees and contractors are not liable for damages resulting from ordinary negligence, to the extent permitted by Swiss law. Liability for gross negligence and intentional misconduct remains unaffected.</p>
+    <p>We are not liable for theft, loss or damage to personal items brought onto our premises. Members are advised to use the lockers provided.</p>
+    <p>To the extent legally permissible, Tulua's total liability under or in connection with the membership is capped at the total fees paid by the member during the twelve months preceding the event giving rise to the claim.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xi</p>
+    <h2 class="s-title">Discretion and house rules</h2>
+    <p>Tulua is a private club founded on the principle of complete discretion.</p>
+    <p>Members agree not to photograph, film or audio-record other members, staff or club facilities without prior written consent.</p>
+    <p>Members are asked to maintain a respectful, low-volume atmosphere at all times and to respect the privacy of fellow members.</p>
+    <p>Repeated or material violation of house rules may result in suspension or termination of membership under Section iv.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xii</p>
+    <h2 class="s-title">Confidentiality of other members</h2>
+    <p>The identities of fellow Tulua members are strictly confidential. You agree not to disclose the identity of any member, the fact of their membership, or any conversation or interaction observed within the club, to any third party.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xiii</p>
+    <h2 class="s-title">Guests</h2>
+    <p>Guests may be invited only with prior agreement from Tulua and subject to availability. The inviting member remains responsible for their guest's conduct and for ensuring the guest is informed of the relevant excerpts of these Terms.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xiv</p>
+    <h2 class="s-title">Personal data and privacy</h2>
+    <p>Your personal data is processed in accordance with our <a href="privacy.html">Privacy Policy</a>. By accepting these Terms you confirm you have read and understood the Privacy Policy.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xv</p>
+    <h2 class="s-title">Amendments</h2>
+    <p>Tulua may amend these Terms with no less than <span class="placeholder">[30 days']</span> written notice to members. If you do not accept the amended Terms, you may terminate your membership effective from the date the amendments take effect.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xvi</p>
+    <h2 class="s-title">Force majeure</h2>
+    <p>Tulua is not liable for delay or failure in performance arising from events outside our reasonable control, including but not limited to natural disasters, pandemic-related closures, official orders or disruption of utilities.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xvii</p>
+    <h2 class="s-title">Governing law and jurisdiction</h2>
+    <p>These Terms are governed by Swiss law.</p>
+    <p>Exclusive jurisdiction for any dispute arising from or in connection with the membership lies with the competent courts at the registered seat of Tulua GmbH, currently Thalwil, Canton of Zurich.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xviii</p>
+    <h2 class="s-title">Severability</h2>
+    <p>If any provision of these Terms is or becomes invalid or unenforceable, the validity of the remaining provisions is not affected. The invalid provision shall be replaced by a valid one that comes closest to the intended commercial result.</p>
+  </section>
+
+  <section>
+    <p class="s-num">xix</p>
+    <h2 class="s-title">Language</h2>
+    <p>These Terms have been prepared in English. In the event of any inconsistency between this version and any translation, the English version prevails — unless an equally binding German version is agreed in writing.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="f-logo">Tulu<span>a</span> Health Clubs</div>
+  <ul class="f-links">
+    <li><a href="clubs.html">Clubs</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="personal-training.html">Personal Training</a></li>
+    <li><a href="longevity.html">Longevity</a></li>
+    <li><a href="echo-by-tulua.html">Echo</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="#" onclick="if(window.TuluaConsent){TuluaConsent.showBanner()};return false;">Cookies</a></li>
+  </ul>
+  <p class="f-copy">© Tulua GmbH 2026 &nbsp;·&nbsp; Zollikon &amp; Thalwil, Switzerland &nbsp;·&nbsp; <a href="impressum.html" style="color:rgba(250,247,242,.2);text-decoration:none;transition:color .3s">Impressum</a></p>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>50));
+const ham=document.getElementById('ham');
+const mobNav=document.getElementById('mob-nav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mobNav.classList.toggle('open');document.body.style.overflow=mobNav.classList.contains('open')?'hidden':'';});
+document.getElementById('mob-nav-close').addEventListener('click',()=>{ham.classList.remove('open');mobNav.classList.remove('open');document.body.style.overflow='';});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ham.classList.remove('open');mobNav.classList.remove('open');document.body.style.overflow='';}));
+</script>
+</body>
+</html>
